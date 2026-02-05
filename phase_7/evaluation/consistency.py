@@ -1,0 +1,109 @@
+"""
+Consistency metrics for evaluating LLM decision stability.
+
+Metrics defined here:
+- Jaccard similarity (group overlap)
+- Determinism score (structural matching)
+- Drift score (sequence stability)
+
+IMPORTANT: Determinism is defined STRUCTURALLY, not bytewise:
+- Same group_ids selected
+- Same transition types
+- Intensity within ε = ±0.05
+"""
+from typing import List, Tuple, Set
+
+# Tolerance for intensity comparison
+INTENSITY_EPSILON = 0.05
+
+
+def compute_jaccard_similarity(set_a: Set, set_b: Set) -> float:
+    """
+    Compute Jaccard similarity between two sets.
+    
+    J(A, B) = |A ∩ B| / |A ∪ B|
+    """
+    if not set_a and not set_b:
+        return 1.0
+    intersection = len(set_a & set_b)
+    union = len(set_a | set_b)
+    return intersection / union if union > 0 else 0.0
+
+
+def extract_group_ids(instruction: dict) -> Set[str]:
+    """Extract group IDs from a LightingInstruction."""
+    return {g.get("group_id") for g in instruction.get("groups", [])}
+
+
+def compute_determinism_score(
+    instruction_a: dict,
+    instruction_b: dict,
+    epsilon: float = INTENSITY_EPSILON
+) -> Tuple[float, dict]:
+    """
+    Compute structural determinism between two LightingInstructions.
+    
+    Determinism is defined STRUCTURALLY (not bytewise):
+    - Same group_ids selected
+    - Same transition types
+    - Intensity within ε tolerance
+    """
+    groups_a = {g["group_id"]: g for g in instruction_a.get("groups", [])}
+    groups_b = {g["group_id"]: g for g in instruction_b.get("groups", [])}
+    
+    # 1. Group ID match (Jaccard)
+    ids_a, ids_b = set(groups_a.keys()), set(groups_b.keys())
+    group_match = compute_jaccard_similarity(ids_a, ids_b)
+    
+    # 2. Parameter match for common groups
+    common_ids = ids_a & ids_b
+    param_matches = []
+    intensity_matches = []
+    transition_matches = []
+    
+    for gid in common_ids:
+        ga, gb = groups_a[gid], groups_b[gid]
+        
+        # Intensity check (within epsilon)
+        int_a = ga.get("parameters", {}).get("intensity", 0)
+        int_b = gb.get("parameters", {}).get("intensity", 0)
+        intensity_ok = abs(int_a - int_b) <= epsilon
+        intensity_matches.append(intensity_ok)
+        
+        # Transition type check
+        trans_a = (ga.get("transition") or {}).get("type")
+        trans_b = (gb.get("transition") or {}).get("type")
+        transition_ok = trans_a == trans_b
+        transition_matches.append(transition_ok)
+        
+        param_matches.append(intensity_ok and transition_ok)
+    
+    param_score = sum(param_matches) / len(param_matches) if param_matches else 1.0
+    
+    # Combined score
+    score = (group_match + param_score) / 2
+    
+    return score, {
+        "group_match": group_match,
+        "param_score": param_score,
+        "intensity_epsilon": epsilon,
+        "common_groups": len(common_ids),
+        "intensity_matches": sum(intensity_matches),
+        "transition_matches": sum(transition_matches)
+    }
+
+
+def compute_drift_score(instructions: List[dict]) -> float:
+    """
+    Compute drift across a sequence of instructions.
+    Lower is better (less drift = more stable).
+    """
+    if len(instructions) < 2:
+        return 0.0
+    
+    drifts = []
+    for i in range(1, len(instructions)):
+        score, _ = compute_determinism_score(instructions[i-1], instructions[i])
+        drifts.append(1.0 - score)
+    
+    return sum(drifts) / len(drifts)

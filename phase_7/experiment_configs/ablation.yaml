@@ -1,0 +1,35 @@
+# Ablation study configuration
+experiment:
+  name: ablation
+  description: "Ablation studies for paper evaluation section"
+  version: "1.0"
+
+ablations:
+  - name: "no_emotion"
+    description: "Test without Phase 2 emotion enrichment"
+    disable:
+      - emotion_input
+  - name: "no_rag"
+    description: "Test without Phase 3 RAG context"
+    disable:
+      - rag_context
+  - name: "single_group"
+    description: "Test with single fixture group only"
+    config:
+      max_groups: 1
+
+metrics:
+  consistency:
+    intensity_epsilon: 0.05
+  coverage:
+    require_minimum_groups: 1
+  stability:
+    num_runs: 5
+
+comparison:
+  baseline: "baseline"
+  metrics_to_compare:
+    - determinism_score
+    - drift_score
+    - coverage
+    - stability_score
