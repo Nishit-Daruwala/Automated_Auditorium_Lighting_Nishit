@@ -1,6 +1,9 @@
 # Baseline experiment configuration
+<<<<<<< HEAD
 # Default configuration for lighting decision evaluation
 
+=======
+>>>>>>> phase_7
 experiment:
   name: baseline
   description: "Default configuration for lighting decision evaluation"
@@ -8,6 +11,7 @@ experiment:
 
 metrics:
   consistency:
+<<<<<<< HEAD
     # Intensity tolerance for determinism comparison
     # Values within ±epsilon are considered equal
     intensity_epsilon: 0.05
@@ -38,4 +42,23 @@ output:
   # Trace output directory
   trace_dir: "data/traces/"
   # Metrics report format
+=======
+    intensity_epsilon: 0.05
+    enable_drift: true
+  coverage:
+    require_minimum_groups: 2
+  stability:
+    num_runs: 3
+
+data_sources:
+  scenes: "data/standardized_output/*.json"
+  instructions: "data/lighting_cues/*.json"
+
+rag_logging:
+  enabled: false
+  # Only opaque identifiers: document_id, chunk_id
+
+output:
+  trace_dir: "data/traces/"
+>>>>>>> phase_7
   report_format: "json"

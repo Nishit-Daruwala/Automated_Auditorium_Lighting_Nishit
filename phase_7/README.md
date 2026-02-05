@@ -56,6 +56,7 @@ phase_7/
 ├── schemas.py             ← Internal pydantic models
 ├── trace_logger.py        ← Trace capture module
 ├── metrics.py             ← Unified metrics engine
+├── demo.py                ← Standalone demo script
 ├── evaluation/
 │   ├── consistency.py     ← Jaccard + drift
 │   ├── coverage.py        ← Group coverage
@@ -78,4 +79,4 @@ phase_7/
 
 ---
 
-*Last updated: 2026-02-04*
+*Last updated: 2026-02-05*
