@@ -325,7 +325,7 @@ class LightingDecisionEngine:
         if getattr(self, "groq_key", None):
             kwargs["api_key"] = self.groq_key
             kwargs["base_url"] = "https://api.groq.com/openai/v1"
-            kwargs["model"] = "llama3-70b-8192"  # Excellent Groq model for reasoning
+            kwargs["model"] = "llama-3.3-70b-versatile"  # Excellent Groq model for reasoning
         else:
             kwargs["api_key"] = self.api_key
             kwargs["model"] = LLM_MODEL
