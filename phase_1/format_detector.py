@@ -17,10 +17,11 @@ def detect_format(text):
     """
     # Timestamp patterns
     timestamp_patterns = [
-        r"\[\d+:\d+(?::\d+)?\]",  # [00:30] or [00:30:15]
-        r"\d+:\d+(?::\d+)?",       # 00:30 or 00:30:15
-        r"\d+\.\d+s",              # 10.5s
-        r"\d{2}:\d{2}:\d{2}",      # 00:00:30 (timecode)
+        r"\[\d+:\d+(?::\d+)?\]",          # [00:30] or [00:30:15]
+        r"\d{1,2}:\d{2}\s*(?:–|-)\s*\d{1,2}:\d{2}",  # 00:00 – 03:00 (range format)
+        r"\d+:\d+(?::\d+)?",               # 00:30 or 00:30:15
+        r"\d+\.\d+s",                      # 10.5s
+        r"\d{2}:\d{2}:\d{2}",              # 00:00:30 (timecode)
     ]
     
     has_timestamp = any(re.search(pattern, text) for pattern in timestamp_patterns)

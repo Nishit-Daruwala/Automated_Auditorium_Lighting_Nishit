@@ -12,8 +12,8 @@ DEFAULT_FADE_DURATION = 1.5
 # ============================================================================
 # SCENE SEGMENTATION
 # ============================================================================
-MAX_WORDS_PER_SCENE = 120
-MIN_WORDS_PER_SCENE = 30
+MAX_WORDS_PER_SCENE = 400   # Word budget per scene (was 120 — caused always-33-scenes bug)
+MIN_WORDS_PER_SCENE = 50    # Don't create micro-scenes below this
 
 # ============================================================================
 # EMOTION DETECTION
@@ -21,9 +21,18 @@ MIN_WORDS_PER_SCENE = 30
 EMOTION_MODEL = "j-hartmann/emotion-english-distilroberta-base"
 EMOTION_THRESHOLD = 0.3
 USE_ML_EMOTION = True
+USE_ZERO_SHOT_EMOTION = False  # Set True only if bart-large-mnli is pre-downloaded (~1.6GB)
 
-EMOTION_CATEGORIES = [
+# Basic 7 emotions (ML model output)
+EMOTION_CATEGORIES_BASIC = [
     "anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise"
+]
+
+# Extended 19 emotions (keyword enrichment + zero-shot)
+EMOTION_CATEGORIES = [
+    "anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise",
+    "nostalgia", "mystery", "romantic", "anticipation", "hope", "triumph",
+    "tension", "despair", "serenity", "confusion", "awe", "jealousy"
 ]
 
 # ============================================================================

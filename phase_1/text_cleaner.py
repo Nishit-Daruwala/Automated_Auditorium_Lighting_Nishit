@@ -27,8 +27,8 @@ def clean_text(text, preserve_structure=True):
     text = re.sub(r"\n{3,}", "\n\n", text)  # Max 2 newlines
     
     # Remove special characters but keep essential punctuation
-    # Keep: letters, numbers, spaces, basic punctuation, parentheses, colons, dashes
-    text = re.sub(r"[^\w\s.,!?':\-\(\)\[\]/\n\"']", "", text)
+    # Keep: letters, numbers, spaces, basic punctuation, parentheses, colons, dashes, em-dash, en-dash
+    text = re.sub(r"[^\w\s.,!?':\-\(\)\[\]/\n\"'—–]", "", text)
     
     # Clean up any remaining formatting artifacts
     text = re.sub(r"\s+([.,!?])", r"\1", text)  # Remove space before punctuation
