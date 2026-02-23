@@ -131,6 +131,8 @@ class TransitionType(str, Enum):
     STROBE = "strobe"
     CUT = "cut"
     CROSSFADE = "crossfade"
+    FLASH = "flash"
+    BLINK = "blink"
 
 
 class FocusArea(str, Enum):
