@@ -1,0 +1,127 @@
+{
+  "12_Angry_Men.pdf": {
+    "true_scenes": 9,
+    "true_boundaries": 8,
+    "true_matches": 9
+  },
+  "Script-1.txt": {
+    "true_scenes": 6,
+    "true_boundaries": 5,
+    "true_matches": 6
+  },
+  "Script-2.txt": {
+    "true_scenes": 3,
+    "true_boundaries": 2,
+    "true_matches": 3
+  },
+  "Script-3.txt": {
+    "true_scenes": 5,
+    "true_boundaries": 4,
+    "true_matches": 5
+  },
+  "Script-4.txt": {
+    "true_scenes": 8,
+    "true_boundaries": 7,
+    "true_matches": 8
+  },
+  "Script-5.txt": {
+    "true_scenes": 12,
+    "true_boundaries": 11,
+    "true_matches": 12
+  },
+  "Script-6.txt": {
+    "true_scenes": 15,
+    "true_boundaries": 14,
+    "true_matches": 15
+  },
+  "Script-7.txt": {
+    "true_scenes": 15,
+    "true_boundaries": 14,
+    "true_matches": 15
+  },
+  "Script-8.txt": {
+    "true_scenes": 16,
+    "true_boundaries": 15,
+    "true_matches": 16
+  },
+  "Script-9.txt": {
+    "true_scenes": 15,
+    "true_boundaries": 14,
+    "true_matches": 15
+  },
+  "Script-10.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-11.pdf": {
+    "true_scenes": 5,
+    "true_boundaries": 4,
+    "true_matches": 5
+  },
+  "Script-12.pdf": {
+    "true_scenes": 22,
+    "true_boundaries": 21,
+    "true_matches": 22
+  },
+  "Script-13.pdf": {
+    "true_scenes": 5,
+    "true_boundaries": 4,
+    "true_matches": 5
+  },
+  "Script-14.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-15.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-16.pdf": {
+    "true_scenes": 10,
+    "true_boundaries": 9,
+    "true_matches": 10
+  },
+  "Script-17.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-18.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-19.pdf": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-20.txt": {
+    "true_scenes": 14,
+    "true_boundaries": 13,
+    "true_matches": 14
+  },
+  "Script-21.txt": {
+    "true_scenes": 2,
+    "true_boundaries": 1,
+    "true_matches": 2
+  },
+  "Script-65-Rules-Test.txt": {
+    "true_scenes": 23,
+    "true_boundaries": 22,
+    "true_matches": 23
+  },
+  "Conflict-Test-Script.txt": {
+    "true_scenes": 3,
+    "true_boundaries": 2,
+    "true_matches": 3
+  },
+  "Event-Schedule-Test.txt": {
+    "true_scenes": 7,
+    "true_boundaries": 6,
+    "true_matches": 7
+  }
+}

@@ -1,0 +1,1181 @@
+{
+  "timestamp": "2026-02-19T00:32:02.196355",
+  "total_scenes": 18,
+  "verdicts": [
+    {
+      "scene_id": "scene_001",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_002",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_003",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_004",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_005",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_006",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_007",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_008",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_009",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_010",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_011",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_012",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_013",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_014",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_015",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_016",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_017",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_018",
+      "schema_check": "PASS",
+      "confidence_check": "PASS",
+      "consistency_check": "PASS",
+      "drift_status": "PASS",
+      "conflict_check": "PASS",
+      "coherence_score": 1.0,
+      "stability_check": "PASS",
+      "narrative_validation": "WARN",
+      "human_alignment_trend": "stable",
+      "final_verdict": "WARN",
+      "details": {
+        "schema_issues": [],
+        "hierarchy_issues": [],
+        "confidence_issues": [],
+        "conflict_details": {
+          "overall": "PASS",
+          "color_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "intensity_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "movement_conflict": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "preset_compliance": {
+            "verdict": "PASS",
+            "issues": []
+          },
+          "all_issues": [],
+          "total_conflicts": 0
+        },
+        "coherence_verdict": "PASS",
+        "drift_score": 0.2353,
+        "drift_issues": [],
+        "consistency_details": {
+          "group_variances": {
+            "neutral": {
+              "variance": 0.0,
+              "mean_intensity": 0.5,
+              "count": 13
+            },
+            "fear": {
+              "variance": 0.0,
+              "mean_intensity": 0.25,
+              "count": 4
+            },
+            "surprise": {
+              "variance": 0.0,
+              "count": 1
+            }
+          },
+          "issues": [],
+          "total_emotions": 3
+        },
+        "narrative_issues": [
+          "Primary emotion flips 8 times across 18 scenes (max recommended: 3). Sequence: neutral \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 neutral \u2192 fear \u2192 neutral \u2192 ... (10 more)"
+        ]
+      }
+    }
+  ],
+  "pass_count": 0,
+  "warn_count": 18,
+  "fail_count": 0,
+  "overall_verdict": "WARN",
+  "can_proceed": true
+}

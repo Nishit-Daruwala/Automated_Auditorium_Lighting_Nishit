@@ -16,8 +16,7 @@ from phase_1 import (
     clean_text,
     extract_stage_directions,
     segment_scenes,
-    generate_timestamps,
-    extract_timestamps,
+    assign_timestamps_hybrid,
     build_scene_json,
     build_complete_output
 )
@@ -127,34 +126,71 @@ def process_script(input_file, output_file=None):
     if stage_directions:
         print(f"   ✓ Found {len(stage_directions)} stage directions")
     
-    # Step 4: Scene Segmentation
-    print_step(4, total_steps, "Segmenting into scenes...")
-    scenes = segment_scenes(cleaned_text, format_info)
-    print(f"   ✓ Segmented into {len(scenes)} scenes")
+    # ==========================================================
+    # Step 4: PHASE A — Deterministic Scene Boundary Detection
+    # ==========================================================
+    print_step(4, total_steps, "Detecting scene boundaries from markers...")
+    from phase_1 import detect_scene_boundaries_from_markers
+    ground_truth = detect_scene_boundaries_from_markers(cleaned_text)
+    
+    if ground_truth and ground_truth["count"] > 0:
+        scenes = ground_truth["scenes"]
+        print(f"   ✓ Ground truth: {ground_truth['count']} scenes detected from markers")
+        for s in scenes:
+            marker_info = s.get("marker", "")[:50]
+            print(f"      Scene {s['scene_number']:2d}: lines {s['start_line']}–{s['end_line']} | {marker_info}")
+    else:
+        # Fallback: word-count based segmentation
+        scenes = segment_scenes(cleaned_text, format_info)
+        print(f"   ✓ Segmented into {len(scenes)} scenes (word-count fallback)")
+    
     if scenes:
         avg_words = sum(len(s.get("content", "").split()) for s in scenes) / len(scenes)
         print(f"   ✓ Average scene length: {avg_words:.0f} words")
     
-    # Step 5: Timestamp Handling
-    print_step(5, total_steps, "Processing timestamps...")
-    if format_info['timestamped']:
-        timestamps = extract_timestamps(raw_text, scenes)
-        print(f"   ✓ Extracted timestamps from script")
-    else:
-        timestamps = generate_timestamps(scenes)
-        print(f"   ✓ Generated timestamps based on word count")
+    # ==========================================================
+    # Step 5: PHASE B — Full-Script LLM Emotion Analysis
+    # ==========================================================
+    print_step(5, total_steps, "Analyzing emotions with full narrative context...")
+    from phase_2 import analyze_all_scenes
     
-    # Step 6: Emotion Analysis
-    print_step(6, total_steps, "Analyzing emotions...")
+    # Single OpenAI call: entire script + ground truth boundaries → all emotions
+    emotion_results = analyze_all_scenes(
+        full_script=cleaned_text,
+        scenes=scenes,
+    )
+    
+    # Map emotions by scene_id for the timestamp estimator
+    emotion_map = {}
+    if emotion_results:
+        for emo in emotion_results:
+            if emo and "scene_id" in emo:
+                emotion_map[emo["scene_id"]] = emo
+    
+    # ==========================================================
+    # Step 6: Timestamp Handling (Emotion-Aware)
+    # ==========================================================
+    print_step(6, total_steps, "Estimating timeline & pacing...")
+    timestamps = assign_timestamps_hybrid(scenes, emotion_map)
+    
+    explicit_count = sum(1 for t in timestamps if t.get("source") == "explicit")
+    print(f"   ✓ Anchored {explicit_count} explicit timestamps")
+    print(f"   ✓ Interpolated {len(timestamps) - explicit_count} scenes using hybrid estimator")
+    
+    # Build scene data + populate Graph RAG from full-context results
+    from phase_2.graph_rag import build_scene_graph
+    scene_graph = build_scene_graph(scenes)
+    
     scene_data = []
     emotion_summary = {}
     
-    for i, (scene, timestamp) in enumerate(zip(scenes, timestamps)):
-        if VERBOSE_OUTPUT:
-            progress = f"({i+1}/{len(scenes)})"
-            print(f"   Analyzing scene {progress}...", end='\r')
-        
-        emotion_analysis = analyze_emotion(scene.get("content", ""))
+    for i, (scene, timestamp, emotion_analysis) in enumerate(zip(scenes, timestamps, emotion_results)):
+        # Update Graph RAG with the full-context emotion results
+        scene_graph.update_scene_emotion(
+            scene_position=i,
+            primary=emotion_analysis.get("primary_emotion", "neutral"),
+            confidence=emotion_analysis.get("confidence", 0.0),
+        )
         
         # Track emotion distribution
         primary = emotion_analysis["primary_emotion"]
@@ -166,9 +202,16 @@ def process_script(input_file, output_file=None):
             timestamp=timestamp,
             emotion_analysis=emotion_analysis
         )
+        
+        # Add narrative fields if available
+        if "narrative_role" in emotion_analysis:
+            scene_json["narrative_role"] = emotion_analysis["narrative_role"]
+        if "mood_shift" in emotion_analysis:
+            scene_json["mood_shift"] = emotion_analysis["mood_shift"]
+        
         scene_data.append(scene_json)
     
-    print(f"   ✓ Analyzed {len(scenes)} scenes                    ")
+    print(f"   ✓ Analyzed {len(scenes)} scenes with full narrative context")
     
     # Display emotion distribution
     if emotion_summary:
@@ -177,18 +220,44 @@ def process_script(input_file, output_file=None):
             percentage = (count / len(scenes)) * 100
             print(f"      - {emotion}: {count} scenes ({percentage:.1f}%)")
     
-    # Step 7: Genre Classification (Simple version based on emotions)
+    # Step 7: Genre Classification (OpenAI-enhanced)
     print_step(7, total_steps, "Determining genre...")
     dominant_emotion = max(emotion_summary.items(), key=lambda x: x[1])[0] if emotion_summary else "neutral"
-    genre_map = {
-        "joy": "comedy",
-        "sadness": "drama",
-        "fear": "thriller",
-        "anger": "drama",
-        "surprise": "adventure",
-        "neutral": "drama"
-    }
-    genre = genre_map.get(dominant_emotion, "drama")
+    
+    # Tier 1: Try OpenAI for nuanced genre classification
+    genre = None
+    try:
+        from utils.openai_client import openai_json
+        if emotion_summary:
+            emotion_dist = ", ".join(f"{e}: {c} scenes" for e, c in sorted(emotion_summary.items(), key=lambda x: x[1], reverse=True))
+            result = openai_json(
+                prompt=(
+                    f"A script has {len(scenes)} scenes with this emotion distribution:\n"
+                    f"{emotion_dist}\n\n"
+                    f"Classify the genre. Examples: drama, comedy, thriller, dark comedy, "
+                    f"psychological thriller, romantic drama, adventure, horror, mystery.\n\n"
+                    f'Return JSON: {{"genre": "..."}}'
+                ),
+                system_prompt="You are a script genre classifier. Output ONLY valid JSON.",
+                expected_keys=["genre"],
+            )
+            if result and result.get("genre"):
+                genre = result["genre"]
+    except Exception:
+        pass
+    
+    # Tier 2: Static mapping fallback
+    if not genre:
+        genre_map = {
+            "joy": "comedy",
+            "sadness": "drama",
+            "fear": "thriller",
+            "anger": "drama",
+            "surprise": "adventure",
+            "neutral": "drama"
+        }
+        genre = genre_map.get(dominant_emotion, "drama")
+    
     print(f"   ✓ Genre: {genre}")
     
     # Step 8: Build Final Output
@@ -201,6 +270,12 @@ def process_script(input_file, output_file=None):
         "stage_directions_found": len(stage_directions),
         "complexity": format_info.get('complexity', 'unknown')
     })
+
+    # Inject Graph RAG narrative structure so downstream lighting engine can access scene relationships
+    try:
+        output["scene_graph"] = scene_graph.summary()
+    except Exception as e:
+        print(f"   ⚠️ Could not serialize scene graph: {e}")
     
     # Step 9: Save Output
     print_step(9, total_steps, "Saving output...")

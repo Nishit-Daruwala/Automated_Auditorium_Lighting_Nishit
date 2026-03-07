@@ -1,152 +1,102 @@
-# Automated Auditorium Lighting System
+# 🎭 Automated Auditorium Lighting System
 
-AI-driven system that reads time-stamped play or event scripts and produces lighting cue sequences matching each scene's mood.
+**Lumina Intelligence** is an AI-driven, Human-in-the-Loop system that ingests theater scripts, understands scene-by-scene emotions, and automatically generates real-time, professional auditorium lighting designs mapped to physical stage hardware.
 
-## Features
+## ✨ Core Features
+- 📚 **Multi-Format Parsing:** Support for `.txt`, `.pdf`, and `.docx` theater scripts.
+- � **Emotional Intelligence:** Understands scene sentiment and pacing using Llama 3 Instruct & DistilRoBERTa.
+- 🏛️ **Dual RAG Architecture:** Uses FAISS vector databases to anchor AI hallucinations strictly to real-world theatrical textbooks and physical hardware limits.
+- ⏱️ **Timestamp Prediction:** Automatically calculates execution timelines based on script density.
+- 🖥️ **Real-Time 3D Visualization:** Includes a FastAPI + Three.js web dashboard to visually preview lighting transitions.
+- � **8-Check Evaluation Dashboard:** Mathematically scores the AI's logic (Conflicts, Drift, Stability) before stage execution.
 
-- 🎭 Multi-format script support: **.txt, .pdf, .docx**
-- 🤖 ML-based emotion detection using DistilRoBERTa
-- ⏱️ Automatic timestamp generation or extraction
-- 📊 Comprehensive JSON output with metadata
-- 🎨 Genre classification
-- 🔄 Modular pipeline architecture
+---
 
-## Supported File Formats
+## 🏗️ Project Architecture (The 8 Phases)
 
-| Format | Extension | Status | Notes |
-|--------|-----------|--------|-------|
-| Plain Text | `.txt` | ✅ Full Support | Best for manual scripts |
-| PDF | `.pdf` | ✅ Full Support | Requires PyPDF2 |
-| Word | `.docx` | ✅ Full Support | Requires python-docx |
-| Legacy Word | `.doc` | ❌ Not Supported | Convert to .docx first |
+The project is structured into 8 modular phases:
 
-## Installation
+1. **Phase 1: Script Parsing & Structuring** - Fragments scripts into logical, timestamped scenes.
+2. **Phase 2: Emotion Analysis** - Identifies primary and secondary moods (e.g., joy, tension).
+3. **Phase 3: Knowledge Layer (RAG)** - Retrieves professional lighting rules and limits from databases.
+4. **Phase 4: LLM Lighting Decision Engine** - Formulates semantic lighting intents (Color, Intensity, Target).
+5. **Phase 5: Simulation & Visualization** - Plays the cues in real-time on a 3D Web UI.
+6. **Phase 6: Orchestration Validation** - Gatekeeps output against impossible hardware instructions.
+7. **Phase 7: Evaluation Engine** - Scores coherence, drift, and conflicts (producing a WARN/PASS metric).
+8. **Phase 8: Hardware Export (Future)** - Outgoing DMX512/Art-Net translations for actual stage dimmers.
+
+*For rigorous details on every file, please see the `Explaination/File_understanding.md` and `Explaination/Other_Folder.md` documents.*
+
+---
+
+## 🚀 Installation & Setup
+
 ```bash
-# Clone repository
+# 1. Clone the repository
 git clone <repository-url>
 cd Automated_Auditorium_Lighting
 
-# Create virtual environment
+# 2. Setup Virtual Environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install ALL dependencies (including PDF and DOCX support)
+# 3. Install Dependencies
 pip install -r requirements.txt
-
-# OR install selectively:
-# For text only:
-pip install transformers torch
-
-# For PDF support:
-pip install transformers torch PyPDF2
-
-# For DOCX support:
-pip install transformers torch python-docx
 ```
 
-## Quick Start
+---
+
+## 🕹️ Quick Start Guide
+
+### 1. Generating Lighting Cues from a Script (Backend)
+Process a raw script (TXT/PDF/DOCX) through the pipeline to generate standardized JSON output:
 ```bash
-# Process a text file
-python main.py data/raw_scripts/my_script.txt
-
-# Process a PDF
-python main.py data/raw_scripts/screenplay.pdf
-
-# Process a Word document
-python main.py data/raw_scripts/play.docx
-
-# Specify custom output location
-python main.py data/raw_scripts/my_script.pdf data/standardized_output/output.json
+python main.py data/raw_scripts/sample_play.txt
 ```
 
-## File Format Examples
-
-### Text File (.txt)
-```
-[00:00] SCENE 1 - INTERIOR CASTLE
-Romeo enters the grand hall...
-```
-
-### PDF File (.pdf)
-- Standard screenplay PDFs
-- Exported scripts from Final Draft, Celtx, etc.
-- Scanned scripts (text must be OCR'd)
-
-### Word Document (.docx)
-- Scripts formatted in Microsoft Word
-- Google Docs exported as .docx
-- LibreOffice Writer documents
-
-## Troubleshooting
-
-### PDF Issues
+Translate the Phase 1 parsed scenes directly into semantic lighting cues (Phase 2/4):
 ```bash
-# If PDF extraction fails
-pip install --upgrade PyPDF2
-
-# Try alternative PDF library
-pip install pypdf
+python main_phase2.py data/standardized_output/sample_play_processed.json
 ```
 
-### DOCX Issues
+### 2. Running the 3D Visualizer (Frontend)
+Host the FastAPI server to preview generated cues in your web browser:
 ```bash
-# If DOCX reading fails
-pip install --upgrade python-docx
+python app.py
+```
+*Navigate to `http://localhost:8000` in your browser to view the realtime 3D simulation.*
+
+### 3. Running Diagnostics
+Verify that your local environment has the required models, folders, and API keys:
+```bash
+python run_diagnostics.py
 ```
 
-### Legacy .doc Files
-Legacy `.doc` format is not supported. Convert to `.docx`:
-- Open in Microsoft Word → Save As → .docx
-- Use LibreOffice Writer → Save As → .docx
-- Online converter: doc2docx.com
+---
 
-## Configuration
+## ⚙️ Configuration
 
-Edit `config.py` to customize:
+System thresholds, timeout flags, LLM models, and default file paths can be tuned by editing the master `config.py` file.
 
-- Speaking speed (WORDS_PER_MINUTE)
-- Scene segmentation parameters
-- Emotion detection thresholds
-- Output formats
+- `OLLAMA_ENABLED`: Toggle local AI evaluation vs Cloud.
+- `WORDS_PER_MINUTE`: Modifies automatic timestamp estimation speeds.
+- `USE_VECTOR_DB`: Toggle the FAISS retrieval engine.
 
-## Project Structure
-```
-Automated_Auditorium_Lighting/
-├── data/
-│   ├── raw_scripts/          # Input: .txt, .pdf, .docx
-│   ├── cleaned_scripts/      # Intermediate cleaned data
-│   ├── segmented_scripts/    # Intermediate segmented data
-│   └── standardized_output/  # Final JSON outputs
-├── pipeline/                 # Core processing modules
-├── utils/                    # File I/O with format support
-├── config.py                # Configuration settings
-└── main.py                  # Main pipeline script
-```
+---
 
-## Output Format
+## 📁 Data Structure
+- `data/raw_scripts/`: Place your input scripts here.
+- `data/standardized_output/`: The parsed JSON equivalents of your scripts.
+- `data/lighting_cues/`: The final AI-generated lighting sequences.
+- `data/traces/`: JSON logging footprints recorded by the Evaluation engine for math analysis.
 
-The pipeline produces JSON with:
-```json
-{
-  "metadata": {
-    "generated_at": "2026-01-27T...",
-    "total_scenes": 10,
-    "source_format": ".pdf",
-    "format_detected": "screenplay",
-    "emotion_distribution": {...}
-  },
-  "scenes": [...]
-}
-```
+---
 
-## Next Steps
-
-This processed output can be used for:
-1. Lighting cue generation (Phase 2)
-2. DMX/Art-Net control
-3. 3D visualization
-4. Real-time hardware control
+## 🛡️ Support & Documentation
+Comprehensive presentation materials and explanations can be found in the `Explaination/` folder:
+- **`Q_A.md`** - Common project questions and answers.
+- **`File_understanding.md`** - A 4-line overview of every single python script.
+- **`Light_Overview.md`** - Metric breakdowns of the Evaluation Dashboard.
 
 ## License
-
-[Your License]
+MIT

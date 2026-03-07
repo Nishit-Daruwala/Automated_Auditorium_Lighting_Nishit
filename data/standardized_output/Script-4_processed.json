@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "total_scenes": 9,
+    "total_duration_seconds": 433.6,
+    "total_duration_formatted": "7m 13s",
+    "emotion_distribution": {
+      "dominant_emotion": "fear",
+      "distribution": {
+        "fear": 6,
+        "surprise": 3
+      }
+    },
+    "format": "screenplay",
+    "genre": "thriller",
+    "source": "Script-4.txt",
+    "source_format": ".txt",
+    "stage_directions_found": 45,
+    "complexity": "high"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "EXT. DERELICT SPACE STATION - ORBITING A GAS GIANT - DAY (SPACE TIME)\n\n[Approx. Timestamp: 00:00:00]\nThe station, \"Nexus-7,\" floats like a forgotten relic amid swirling purple storms of the planet below. Scratched hull, flickering lights. A small shuttle docks clumsily.",
+      "start": 0.0,
+      "end": 16.4,
+      "duration": 16.4,
+      "emotion": "fear",
+      "emotion_confidence": 0.6,
+      "secondary_emotions": [],
+      "sentiment_score": 0.6,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.4
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.6,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.4,
+        "scene_energy": 0.6
+      },
+      "word_count": 41,
+      "narrative_role": "setup",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "INT. NEXUS-7 - DOCKING BAY - CONTINUOUS\n\n[Approx. Timestamp: 00:01:00]\nCAPTAIN ELARA (35, sharp-eyed, no-nonsense explorer) steps out with her team: DR. KAI (42, brilliant but arrogant scientist), TECHIE LENA (28, optimistic gadget whiz), and ROOKIE MARCUS (22, wide-eyed newbie).\n\nELARA\n(adjusting suit comms)\nAlright, team. Scans show life support's holding—barely. We're here for the artifact. In, out, no heroics.\n\nKAI\n(scoffing, checking his scanner)\nHeroics? This station was experimenting with quantum entanglement. If the artifact's real, it could rewrite physics. We're talking doorways to alternate realities.\n\nLENA\n(excited, fiddling with a drone)\nCool! Like, parallel universes where I'm a rock star?\n\nMARCUS\n(nervous)\nOr where we're all dead. Guys, the logs said the crew vanished. Poof.\n\nELARA\nFocus. Kai, lead on the artifact chamber. Lena, get systems online. Marcus, stick with me—watch for anomalies.\n\nThey move through dim corridors, lights humming erratically.",
+      "start": 60.0,
+      "end": 117.2,
+      "duration": 57.2,
+      "emotion": "fear",
+      "emotion_confidence": 0.6,
+      "secondary_emotions": [],
+      "sentiment_score": 0.6,
+      "theatrical_context": {
+        "predicted_theme": "sincere",
+        "confidence": 0.8
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.6,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.6,
+        "scene_energy": 1.0
+      },
+      "word_count": 143,
+      "narrative_role": "inciting_incident",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_003",
+      "scene_number": 3,
+      "text": "INT. CORRIDOR ALPHA - MOMENTS LATER\n\n[Approx. Timestamp: 00:03:30]\nEchoes of distant machinery. The team passes holographic logs flickering on walls—ghostly crew members mid-sentence.\n\nHOLO-CREW MEMBER (projection)\n...the entanglement field is stable. But the echoes... they're not ours...\n\nKAI\n(stopping, intrigued)\nEchoes? That's new. The artifact must be creating temporal feedback loops.\n\nLENA\n(activating a panel)\nPower's at 20%. I can reroute from auxiliary—wait, there's a signal. Incoming?\n\nA low HUM builds. The walls shimmer like water.\n\nMARCUS\nUh, Captain? The floor's... vibrating.\n\nSuddenly, a RIPPLE in reality—a shadowy figure appears at the corridor's end, mirroring Elara's stance.\n\nELARA\nWhat the hell?\n\nThe figure vanishes. Alarms blare softly.\n\nKAI\nThat's it! Quantum echo. The artifact's bleeding alternate versions of us into this reality.\n\nLENA\nSo, like doppelgangers? Awesome... or terrifying?\n\nELARA\nTerrifying wins. Move faster.",
+      "start": 210.0,
+      "end": 264.0,
+      "duration": 54.0,
+      "emotion": "fear",
+      "emotion_confidence": 0.74,
+      "secondary_emotions": [],
+      "sentiment_score": 0.74,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.3
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.74,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.5,
+        "scene_energy": 1.0
+      },
+      "word_count": 135,
+      "narrative_role": "rising_action",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_004",
+      "scene_number": 4,
+      "text": "INT. ARTIFACT CHAMBER - LATER\n\n[Approx. Timestamp: 00:07:00]\nA vast room with a glowing crystalline ARTIFACT at the center, pulsing blue energy. Consoles spark. The team enters cautiously.\n\nKAI\n(awestruck, approaching)\nBeautiful. It's a nexus point—connecting infinite timelines.\n\nHe touches a console. The artifact HUMS louder. Holographic displays activate, showing fractured images: alternate teams succeeding, failing, dying.\n\nLENA\n(hacking in)\nLogs confirm: Crew activated it, then... merged with echoes. Became something else.\n\nMARCUS\nMerged? Like, body horror?\n\nELARA\nKai, don't touch it yet. We extract data first.\n\nKAI\n(ignoring, scanning)\nToo late. Look—these readings... we could control it. Jump timelines. Fix mistakes.\n\nELARA\nThat's not our mission. Corporate wants the artifact contained, not played with.\n\nKAI\nCorporate? They're idiots. Imagine: A world without the war. Or one where my family didn't die in the colony collapse.\n\nLENA\n(sympathetic)\nKai... that's heavy. But messing with timelines? Butterfly effect city.\n\nMARCUS\nYeah, like, what if we erase ourselves?\n\nThe artifact pulses brighter. More echoes appear—translucent versions of the team, arguing in parallel.\n\nECHO-ELARA (faint, overlapping)\n...don't touch it...\n\nECHO-KAI\n...we must...\n\nA surge— the room shakes. Marcus trips, his hand brushes the artifact.\n\nMARCUS\nOops—\n\nReality GLITCHES. The team freezes, then duplicates briefly.\n\nELARA\nMarcus! What did you do?\n\nMARCUS\nNothing! It just... pulled me.\n\nKAI\n(excited)\nIt's responding. We're linked now.",
+      "start": 420.0,
+      "end": 508.0,
+      "duration": 88.0,
+      "emotion": "surprise",
+      "emotion_confidence": 0.5847,
+      "secondary_emotions": [],
+      "sentiment_score": 0.5847,
+      "theatrical_context": {
+        "predicted_theme": "sincere",
+        "confidence": 0.85
+      },
+      "v3_metrics": {
+        "irony_index": 0.7,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.5847,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.5,
+        "scene_energy": 1.0
+      },
+      "word_count": 220,
+      "narrative_role": "rising_action",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_005",
+      "scene_number": 5,
+      "text": "INT. ARTIFACT CHAMBER - ESCALATING CHAOS\n\n[Approx. Timestamp: 00:12:00]\nThe glitches worsen. Echoes solidify, interacting.\n\nECHO-LENA (to real Lena)\nIn my timeline, you invented this. But it consumed you.\n\nLENA\n(stunned)\nMe? No way. I fix things, not break universes.\n\nKAI\n(to Elara)\nCaptain, think bigger. We could merge timelines—create a perfect one.\n\nELARA\nNo. That's playing god. Lena, shut it down.\n\nLENA\n(working frantically)\nTrying! But it's rewriting code on its own. AI-level intelligence?\n\nMARCUS\nGuys, look—more echoes. And they're... us, but wrong.\n\nEchoes multiply: One team fights aliens (wait, aliens?), another dances absurdly, a third melts into goo.\n\nECHO-MARCUS (melting one)\nHelp... it's infinite...\n\nThe real team backs away.\n\nELARA\nThis is spiraling. Evac protocol—back to the shuttle!\n\nKAI\n(rebellious)\nWait! I can control it. Just one command...\n\nHe inputs something. The artifact ROARS. A portal opens—swirling void.\n\nFrom it, bizarre entities emerge: Tentacled shadows, clockwork beings, cartoonish figures.\n\nLENA\nWhat the—? That's not sci-fi; that's nightmare fuel!\n\nMARCUS\n(panicking)\nAliens? Robots? Why is there a dancing pineapple echo?!\n\nELARA\nKai, you idiot! You've cracked the multiverse!\n\nKAI\n(realizing horror)\nI... thought I could select timelines. But it's all of them. Every possibility.\n\nThe room fills with chaos: Echoes clash—laser fights, philosophical debates, slapstick comedy.\n\nECHO-ELARA (to real Elara)\nIn my world, you're a pirate queen. Arrr!\n\nReal Elara shoots a confused look.",
+      "start": 720.0,
+      "end": 810.0,
+      "duration": 90.0,
+      "emotion": "fear",
+      "emotion_confidence": 0.8016000000000001,
+      "secondary_emotions": [],
+      "sentiment_score": 0.8016000000000001,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.7,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.8016000000000001,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.8,
+        "scene_energy": 1.0
+      },
+      "word_count": 225,
+      "narrative_role": "climax",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_006",
+      "scene_number": 6,
+      "text": "INT. CORRIDOR ALPHA - FLEEING\n\n[Approx. Timestamp: 00:18:00]\nThe team runs, dodging merging realities: Walls turn to jelly, gravity flips briefly.\n\nLENA\n(panting)\nThe shuttle's this way! But the station's destabilizing.\n\nMARCUS\nAnd the echoes are following!\n\nBehind: A horde of alternate selves—heroic, villainous, ridiculous—chase them.\n\nECHO-KAI (villainous)\nJoin us! Become infinite!\n\nKAI\nThat's me? I look evil.\n\nELARA\nKeep moving! Lena, can you seal doors?\n\nLENA\n(using gadget)\nOn it—plasma lock!\n\nDoors slam, but echoes phase through.\n\nMARCUS\nThey ghost-mode now?!\n\nA super-crazy echo appears: A giant, mecha-version of the team fused into one robot.\n\nMECHA-ECHO\n(booming)\nWe are Legion! Surrender to the void!\n\nIt fires confetti lasers—harmless but disorienting.\n\nELARA\nThis is insane! Shoot it!\n\nThey fire stun guns—confetti explodes everywhere.",
+      "start": 1080.0,
+      "end": 1129.2,
+      "duration": 49.2,
+      "emotion": "fear",
+      "emotion_confidence": 0.80048,
+      "secondary_emotions": [],
+      "sentiment_score": 0.80048,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.7,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.80048,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.9,
+        "scene_energy": 1.0
+      },
+      "word_count": 123,
+      "narrative_role": "falling_action",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_007",
+      "scene_number": 7,
+      "text": "INT. DOCKING BAY - CLIMAX\n\n[Approx. Timestamp: 00:22:00]\nThey reach the shuttle. The artifact's influence spreads: The gas giant below warps into a smiley face.\n\nKAI\nI can fix this! Reverse the entanglement!\n\nHe hacks a console remotely.\n\nELARA\nNo more experiments!\n\nBut too late—the void portal expands, sucking in echoes.\n\nLENA\nIt's collapsing! We have seconds!\n\nMARCUS\nGoodbye, crazy mes!\n\nThey board. The shuttle detaches as the station implodes.\n\nBut twist: As they escape, the void follows—reality fractures ship-wide.",
+      "start": 1320.0,
+      "end": 1352.0,
+      "duration": 32.0,
+      "emotion": "fear",
+      "emotion_confidence": 0.800144,
+      "secondary_emotions": [],
+      "sentiment_score": 0.800144,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.7,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.800144,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.6,
+        "scene_energy": 0.4875
+      },
+      "word_count": 80,
+      "narrative_role": "falling_action",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_008",
+      "scene_number": 8,
+      "text": "SUPER CRAZY ENDING:\n\n[Approx. Timestamp: 00:24:00]\nInside the shuttle: Everything merges. Elara becomes a pirate, Kai a dancing pineapple, Lena a robot, Marcus a tentacled alien—all swapping bodies mid-sentence.\n\nPIRATE-ELARA (with eyepatch, arrr-ing)\nYarrr, set course for the quantum horizon!\n\nPINEAPPLE-KAI (bouncing)\nBut I'm fruity! This is bananas!\n\nROBOT-LENA (beeping)\nError: Logic overload. Dance protocol activated!\n\nThey all break into absurd dance as tentacles flail.\n\nALIEN-MARCUS\n(tentacles waving)\nIn my timeline, this is normal Tuesday!\n\nThe shuttle spins into the void—screen fills with rainbow glitches, cartoon explosions, philosophical quotes scrolling like credits.\n\nVOICEOVER (overlapping echoes)\nInfinity... is... party time!\n\nThe ship vanishes into a black hole that burps confetti.",
+      "start": 1440.0,
+      "end": 1483.6,
+      "duration": 43.6,
+      "emotion": "surprise",
+      "emotion_confidence": 0.8136560700000001,
+      "secondary_emotions": [],
+      "sentiment_score": 0.8136560700000001,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.8,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.8136560700000001,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.9,
+        "scene_energy": 1.0
+      },
+      "word_count": 109,
+      "narrative_role": "falling_action",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_009",
+      "scene_number": 9,
+      "text": "FADE TO BLACK WITH A COMIC \"BOING\" SOUND.",
+      "start": 1483.6,
+      "end": 1486.8,
+      "duration": 3.2,
+      "emotion": "surprise",
+      "emotion_confidence": 0.594096821,
+      "secondary_emotions": [],
+      "sentiment_score": 0.594096821,
+      "theatrical_context": {
+        "predicted_theme": "absurd",
+        "confidence": 0.6
+      },
+      "v3_metrics": {
+        "irony_index": 0.2,
+        "narrative_seriousness_score": 0.2,
+        "emotion_confidence": 0.594096821,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.7,
+        "scene_energy": 0.0
+      },
+      "word_count": 8,
+      "narrative_role": "resolution",
+      "mood_shift": "none"
+    }
+  ]
+}

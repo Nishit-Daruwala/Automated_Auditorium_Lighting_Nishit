@@ -1,0 +1,999 @@
+{
+  "metadata": {
+    "source": "F:\\CHRIST-UNIVERSITY\\Trimester-3\\Research_Project\\Automated_Lighting\\data\\standardized_output\\Script-5_processed.json",
+    "generation_method": "rag_enhanced",
+    "total_instructions": 18
+  },
+  "instructions": [
+    {
+      "scene_id": "scene_001",
+      "time_window": {
+        "start": 0.0,
+        "end": 2.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using Standard Wash.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: Standard Wash"
+        ],
+        "technique": "Standard Wash",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_002",
+      "time_window": {
+        "start": 4.0,
+        "end": 20.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_003",
+      "time_window": {
+        "start": 22.0,
+        "end": 43.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_004",
+      "time_window": {
+        "start": 45.0,
+        "end": 64.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Lighting design for fear scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_005",
+      "time_window": {
+        "start": 66.0,
+        "end": 68.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_006",
+      "time_window": {
+        "start": 70.0,
+        "end": 89.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_007",
+      "time_window": {
+        "start": 91.0,
+        "end": 119.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Lighting design for fear scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_008",
+      "time_window": {
+        "start": 121.0,
+        "end": 123.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_009",
+      "time_window": {
+        "start": 125.0,
+        "end": 139.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Lighting design for fear scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_010",
+      "time_window": {
+        "start": 141.0,
+        "end": 160.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Lighting design for fear scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_011",
+      "time_window": {
+        "start": 162.0,
+        "end": 166.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_012",
+      "time_window": {
+        "start": 168.0,
+        "end": 184.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_013",
+      "time_window": {
+        "start": 186.0,
+        "end": 188.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_014",
+      "time_window": {
+        "start": 190.0,
+        "end": 208.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.9,
+            "color": "bright_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.36,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.54,
+            "color": "bright_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "surprise",
+        "strategy_summary": "Lighting design for surprise scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_015",
+      "time_window": {
+        "start": 210.0,
+        "end": 226.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_016",
+      "time_window": {
+        "start": 228.0,
+        "end": 239.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_017",
+      "time_window": {
+        "start": 241.0,
+        "end": 248.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using spot.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: spot"
+        ],
+        "technique": "spot",
+        "generation_method": "rag_enhanced"
+      }
+    },
+    {
+      "scene_id": "scene_018",
+      "time_window": {
+        "start": 250.0,
+        "end": 252.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Lighting design for neutral scene using Standard Wash.",
+        "provenance": [
+          "A Method of Lighting the Stage p.13",
+          "Technique: Standard Wash"
+        ],
+        "technique": "Standard Wash",
+        "generation_method": "rag_enhanced"
+      }
+    }
+  ]
+}

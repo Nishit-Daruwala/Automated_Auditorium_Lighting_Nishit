@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "source": "F:\\CHRIST-UNIVERSITY\\Trimester-3\\Research_Project\\Automated_Lighting\\data\\standardized_output\\Script-1_processed.json",
+    "generation_method": "graph_rag",
+    "total_instructions": 5
+  },
+  "instructions": [
+    {
+      "scene_id": "scene_001",
+      "time_window": {
+        "start": 0.0,
+        "end": 90.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.5,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "warm_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "neutral",
+        "strategy_summary": "Graph RAG lighting design for neutral using front_wash.",
+        "provenance": [
+          "Graph RAG: emotion_neutral → style_neutral_general → tech_front_wash",
+          "Technique: front_wash"
+        ],
+        "technique": "front_wash",
+        "generation_method": "graph_rag",
+        "graph_metadata": {
+          "path_score": 0.93,
+          "path_nodes": [
+            "emotion_neutral",
+            "style_neutral_general",
+            "tech_front_wash"
+          ],
+          "alternatives_count": 3,
+          "safety_checks": [
+            "SR002_min_intensity:PASS",
+            "SR003_max_intensity:PASS",
+            "SR004_transition_speed:PASS"
+          ],
+          "fixture_types_required": [
+            "Fresnel",
+            "PAR RGB"
+          ],
+          "fallback_used": false,
+          "reasoning_subgraph": {
+            "root": "emotion_neutral",
+            "nodes": [
+              "tech_side_wash",
+              "emotion_neutral",
+              "style_neutral_general",
+              "tech_front_wash",
+              "tech_back_wash"
+            ],
+            "edges": [
+              {
+                "from": "emotion_neutral",
+                "to": "style_neutral_general",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_neutral_general",
+                "to": "tech_front_wash",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_neutral",
+                "to": "style_neutral_general",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_neutral_general",
+                "to": "tech_side_wash",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_neutral",
+                "to": "style_neutral_general",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_neutral_general",
+                "to": "tech_back_wash",
+                "type": "USES"
+              }
+            ],
+            "total_paths_scored": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "scene_002",
+      "time_window": {
+        "start": 90.0,
+        "end": 180.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 3.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Graph RAG lighting design for fear using dim_isolation.",
+        "provenance": [
+          "Graph RAG: emotion_fear → style_low_key_dramatic → tech_dim_isolation",
+          "Technique: dim_isolation"
+        ],
+        "technique": "dim_isolation",
+        "generation_method": "graph_rag",
+        "graph_metadata": {
+          "path_score": 0.9,
+          "path_nodes": [
+            "emotion_fear",
+            "style_low_key_dramatic",
+            "tech_dim_isolation"
+          ],
+          "alternatives_count": 3,
+          "safety_checks": [
+            "SR002_min_intensity:PASS",
+            "SR003_max_intensity:PASS",
+            "SR004_transition_speed:PASS"
+          ],
+          "fixture_types_required": [
+            "Fresnel",
+            "Profile Spot"
+          ],
+          "fallback_used": false,
+          "reasoning_subgraph": {
+            "root": "emotion_fear",
+            "nodes": [
+              "tech_tight_spot",
+              "tech_dim_isolation",
+              "style_low_key_dramatic",
+              "emotion_fear",
+              "tech_silhouette_backlight"
+            ],
+            "edges": [
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_dim_isolation",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_silhouette_backlight",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_tight_spot",
+                "type": "USES"
+              }
+            ],
+            "total_paths_scored": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "scene_003",
+      "time_window": {
+        "start": 180.0,
+        "end": 300.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.85,
+            "color": "bright_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.34,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.51,
+            "color": "bright_white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "cut",
+            "duration": 0.3
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "surprise",
+        "strategy_summary": "Graph RAG lighting design for surprise using front_wash.",
+        "provenance": [
+          "Graph RAG: emotion_surprise → style_high_key_bright → tech_front_wash",
+          "Technique: front_wash"
+        ],
+        "technique": "front_wash",
+        "generation_method": "graph_rag",
+        "graph_metadata": {
+          "path_score": 0.89,
+          "path_nodes": [
+            "emotion_surprise",
+            "style_high_key_bright",
+            "tech_front_wash"
+          ],
+          "alternatives_count": 3,
+          "safety_checks": [
+            "SR002_min_intensity:PASS",
+            "SR003_max_intensity:PASS",
+            "SR004_transition_speed:PASS"
+          ],
+          "fixture_types_required": [
+            "Fresnel",
+            "PAR RGB"
+          ],
+          "fallback_used": false,
+          "reasoning_subgraph": {
+            "root": "emotion_surprise",
+            "nodes": [
+              "tech_color_wash_rgb",
+              "tech_moving_head_sweep",
+              "style_high_key_bright",
+              "emotion_surprise",
+              "style_dynamic_chase",
+              "tech_front_wash"
+            ],
+            "edges": [
+              {
+                "from": "emotion_surprise",
+                "to": "style_high_key_bright",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_high_key_bright",
+                "to": "tech_front_wash",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_surprise",
+                "to": "style_high_key_bright",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_high_key_bright",
+                "to": "tech_color_wash_rgb",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_surprise",
+                "to": "style_dynamic_chase",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_dynamic_chase",
+                "to": "tech_moving_head_sweep",
+                "type": "USES"
+              }
+            ],
+            "total_paths_scored": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "scene_004",
+      "time_window": {
+        "start": 300.0,
+        "end": 450.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "crossfade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 1.5
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 1.5
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Graph RAG lighting design for fear using dim_isolation.",
+        "provenance": [
+          "Graph RAG: emotion_fear → style_low_key_dramatic → tech_dim_isolation",
+          "Technique: dim_isolation"
+        ],
+        "technique": "dim_isolation",
+        "generation_method": "graph_rag",
+        "graph_metadata": {
+          "path_score": 0.9,
+          "path_nodes": [
+            "emotion_fear",
+            "style_low_key_dramatic",
+            "tech_dim_isolation"
+          ],
+          "alternatives_count": 3,
+          "safety_checks": [
+            "SR002_min_intensity:PASS",
+            "SR003_max_intensity:PASS",
+            "SR004_transition_speed:PASS"
+          ],
+          "fixture_types_required": [
+            "Fresnel",
+            "Profile Spot"
+          ],
+          "fallback_used": false,
+          "reasoning_subgraph": {
+            "root": "emotion_fear",
+            "nodes": [
+              "tech_tight_spot",
+              "tech_dim_isolation",
+              "style_low_key_dramatic",
+              "emotion_fear",
+              "tech_silhouette_backlight"
+            ],
+            "edges": [
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_dim_isolation",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_silhouette_backlight",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_tight_spot",
+                "type": "USES"
+              }
+            ],
+            "total_paths_scored": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "scene_005",
+      "time_window": {
+        "start": 450.0,
+        "end": 498.0
+      },
+      "groups": [
+        {
+          "group_id": "FRONT_WASH",
+          "parameters": {
+            "intensity": 0.25,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "BACK_LIGHT",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "white",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        },
+        {
+          "group_id": "SIDE_FILL",
+          "parameters": {
+            "intensity": 0.15,
+            "color": "steel_blue",
+            "focus_area": "FULL_STAGE"
+          },
+          "transition": {
+            "type": "fade",
+            "duration": 2.0
+          }
+        }
+      ],
+      "metadata": {
+        "emotion": "fear",
+        "strategy_summary": "Graph RAG lighting design for fear using dim_isolation.",
+        "provenance": [
+          "Graph RAG: emotion_fear → style_low_key_dramatic → tech_dim_isolation",
+          "Technique: dim_isolation"
+        ],
+        "technique": "dim_isolation",
+        "generation_method": "graph_rag",
+        "graph_metadata": {
+          "path_score": 0.9,
+          "path_nodes": [
+            "emotion_fear",
+            "style_low_key_dramatic",
+            "tech_dim_isolation"
+          ],
+          "alternatives_count": 3,
+          "safety_checks": [
+            "SR002_min_intensity:PASS",
+            "SR003_max_intensity:PASS",
+            "SR004_transition_speed:PASS"
+          ],
+          "fixture_types_required": [
+            "Fresnel",
+            "Profile Spot"
+          ],
+          "fallback_used": false,
+          "reasoning_subgraph": {
+            "root": "emotion_fear",
+            "nodes": [
+              "tech_tight_spot",
+              "tech_dim_isolation",
+              "style_low_key_dramatic",
+              "emotion_fear",
+              "tech_silhouette_backlight"
+            ],
+            "edges": [
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_dim_isolation",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_silhouette_backlight",
+                "type": "USES"
+              },
+              {
+                "from": "emotion_fear",
+                "to": "style_low_key_dramatic",
+                "type": "EVOKES"
+              },
+              {
+                "from": "style_low_key_dramatic",
+                "to": "tech_tight_spot",
+                "type": "USES"
+              }
+            ],
+            "total_paths_scored": 3
+          }
+        }
+      }
+    }
+  ]
+}

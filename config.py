@@ -40,7 +40,7 @@ EMOTION_CATEGORIES = [
 # ============================================================================
 SCENE_MARKERS = [
     "INT.", "EXT.", "FADE IN", "FADE OUT", "CUT TO", 
-    "SCENE", "ACT", "INTERIOR", "EXTERIOR"
+    "SCENE", "ACT", "INTERIOR", "EXTERIOR", "INT", "EXT"
 ]
 
 # ============================================================================
@@ -114,3 +114,33 @@ LIGHTKEY_FIXTURE_MAPPING = {
     "PAR_2": 2,        # PAR_2 → LightKey Fixture #2
     "MovingHead_1": 3, # etc.
 }
+
+# ============================================================================
+# PHASE 1 — TEXT ACQUISITION & STRUCTURING
+# ============================================================================
+OCR_CONFIDENCE_THRESHOLD = 0.85
+OCR_PROVIDER = "mistral"
+OCR_AVG_LINE_LENGTH_MIN = 10
+OCR_AVG_LINE_LENGTH_MAX = 500
+OCR_NOISE_RATIO_MAX = 0.05
+CHUNK_MAX_LINES = 150
+CHUNK_OVERLAP_LINES = 10
+PHASE1_LLM_MODEL = "Qwen/Qwen2.5-7B-Instruct"
+PHASE1_LLM_TEMPERATURE = 0.0
+PHASE1_LLM_MAX_RETRIES = 1
+PHASE1_LLM_MAX_NEW_TOKENS = 2048
+SCENE_GAP_TOLERANCE_LINES = 2
+SCENE_COVERAGE_THRESHOLD = 0.80
+TIMESTAMP_MAX_JUMP_SECONDS = 1800
+
+# Set to False to skip LLM and use rule-based segmentation (saves API credits)
+PHASE1_USE_LLM = False
+
+# ============================================================================
+# OLLAMA LOCAL LLM CONFIGURATION
+# ============================================================================
+OLLAMA_BASE_URL = "http://localhost:11434"
+OLLAMA_MODEL = "phi3:latest"
+OLLAMA_TIMEOUT = 60          # seconds per request (balance between giving time & avoiding hangs)
+OLLAMA_TEMPERATURE = 0.1     # low for deterministic outputs
+OLLAMA_ENABLED = True        # master switch — set False to skip all Ollama calls

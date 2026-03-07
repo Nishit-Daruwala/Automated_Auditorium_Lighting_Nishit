@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "total_scenes": 10,
+    "total_duration_seconds": 3720.4,
+    "total_duration_formatted": "62m 0s",
+    "emotion_distribution": {
+      "dominant_emotion": "tension",
+      "distribution": {
+        "tension": 8,
+        "fear": 1,
+        "neutral": 1
+      }
+    },
+    "format": "theatrical",
+    "genre": "thriller",
+    "source": "Script-13.pdf",
+    "source_format": ".pdf",
+    "stage_directions_found": 59,
+    "complexity": "medium"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "1\n\nThis text is made available to read free of charge.\nHowever, an authorization must be requested from the author\nprior to any public performance, whether by professional or amateur\ncompanies. To get in touch with Jean-Pierre Martinez\nand to request an authorization to represent one of his works:\nhttps://comediatheque.net\nIs there a pilot\nin the audience?\nJean-Pierre Martinez\nTranslation by the author\nOn a plane, the director of a sensationalist magazine coincidentally meets an\nembalmer, who claims to have a bombshell news, making her dream of a record-\nbraking circulation. Things get complicated because this encounter takes place on a\nParis-Tokyo flight: twelve hours in confinement with no way to communicate with\nthe outside world. Holding a scoop but being unable to publish it... A true Japanese\ntorture!\nDepending on the country where this play will be performed, the identity of the\ndeceased \"star\" mentioned in the text may be changed, as well as the geographical\nreferences, so that the comedy of the situation is better understood by the local\naudience.\nCharacters\nHim\nHer\n© La Comédiathèque\n2",
+      "start": 0.0,
+      "end": 71.6,
+      "duration": 71.6,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "anticipation",
+          "score": 0.75
+        },
+        {
+          "emotion": "frustration",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 179,
+      "narrative_role": "introduction",
+      "mood_shift": "none"
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "PROLOGUE (optional)\nThe lights go out (therefore, the silence), as if the show were about to begin. But\nnothing happens for a long time, long enough for people to feel uncomfortable. The\nlight comes back on in a corner of the room, where a man and a woman who do not\nknow each other are sitting next to each other. The man nervously consults Times\nOut. He looks at his watch. The woman dips into a large popcorn cone. She eats\ncompulsively and not very discreetly.\nHim – Excuse me, do you know what's going on?\nHer (with a gesture of ignorance) – We're waiting for the actors...\nHim – Until now, only the spectators arrived late to the theatre. If the actors start\ndoing it too...\nSilence.\nHer (worried) – Can I take a look at your Times Out. In case the show is canceled...\nHe hands her his Times Out. She doesn't know how to take it with her giant popcorn\ncone in her hands.\nHer (offering him her popcorn) – Do you want some?\nHe hesitates, but accepts. She leafs through the Guide but seems to get lost in it. He\neats a popcorn and grimaces.\nHer (giving up) – Sorry, I'm not used to Times Out...\nHim (disgusted) – I don't like popcorn much either...\nShe returns his Times Out and takes back her popcorn.\nHer – Anyway, it's too late for a late-night movie... Too bad, I'd rather wait.\nHim – I hope it's worth it...\nHer (worried) – Are the reviews bad?\nHim (looking behind him) – There aren't many people in the room...\nHer – You can't trust the reviews, right... Sometimes in theatre, we see such things!\nPraised by critics. It lasts for hours. Nobody dares say they're bored for fear of\nlooking like an idiot. Afterward, they'll say: proof that it's a profound play, you didn't\nunderstand anything.\nHim – With comedy at least, normal people sometimes have good surprises. Even\nwhen the critics found it dreary... it's very hard to make a critic laugh.\nHer – Are you a critic?\nHim – Aren't you?\n3\n\nHer – Actress...\nHim – Ah, yes...\nHer – Apart from the actors and critics, no one goes to the theatre anymore. One\nspectator out of two is an actor. We'll end up not knowing where the stage is...\nHim – Do you know the play?\nHer – No... But I have a friend who's in it. I come to see her... to make her happy.\nHim – Is she a famous actress?\nHer – She mostly does theatre...\nHim – In that case... (pauses, suspicious) Are you really an actress?\nHer (worried) – Do you think I act badly?\nHim – No, no... You act very well.\nHer – Actress at night and... museum guard during the day.\nHim – Given the modernity of the repertoire, it's a bit of the same profession...\nSilence.\nHer – I'm out of popcorn.\nHim (sighing) – We might be starving before the play begins.\nHer – Yes, it seems like they have forgotten about us...\nHim – In a few years, a cleaning lady will find our two skeletons next to each other,\nhand in hand.\nHer – Hand in hand...?\nHim – Seeing the end coming, we might give in to a burst of tenderness. We're a bit\nlike two castaways on a deserted island, aren't we? We don't have much choice...\nHer – Do you think they'll refund us?\nHim (surprised) – Did you pay?\nHer – No...\nHim – In that case...\nThey stand up to leave.\nHim – We can always come back another day...\nHer – The play probably won't be on anymore. Considering its immense success...\nHim – We'll go see another one.\nHer – Is that an invitation...?\n4\n\nHim (pulling out a card) – For two people.\nHer – I hope this time it will start on time... What's the play about...?\nHim (reading the card) – Is there any pilot among the audience?\nThey exchange a skeptical look.\nHer – It sounds a bit stupid, doesn't it?\nHim – Don't forget to turn on your phone...\nHer – Oh yeah, that's right, I had forgotten to turn it off again.\nThey leave. He puts his hand on her shoulder, she recoils slightly, but does not break\naway.\nBlack\n5",
+      "start": 71.6,
+      "end": 364.0,
+      "duration": 292.4,
+      "emotion": "tension",
+      "emotion_confidence": 0.8,
+      "secondary_emotions": [
+        {
+          "emotion": "neutral",
+          "score": 0.6
+        },
+        {
+          "emotion": "anxiety",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.8,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.8
+      },
+      "word_count": 731,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_003",
+      "scene_number": 3,
+      "text": "ACT 1\nHer and him are sitting side by side on a business class airplane. Realism in the\nsetting is not necessarily sought, fully embracing the theatrical convention. The",
+      "start": 364.0,
+      "end": 375.6,
+      "duration": 11.6,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "neutral",
+          "score": 0.7
+        },
+        {
+          "emotion": "anxiety",
+          "score": 0.6
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 29,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_004",
+      "scene_number": 4,
+      "text": "curtain separating the audience from the stage represents the one separating\nbusiness class from economy class. Her, a businesswoman type, dozes off with\nheadphones on. Him, rather uncultured, is wide awake and sipping champagne.\nThe pilot's voice can be heard over a loudspeaker.\nPilot – Good morning, everyone, this is your captain speaking. Thank you for\nchoosing our company for this Paris-Tokyo flight, with no intermission and no\nstopovers. We are currently flying at an altitude of approximately 30,000 feet. This\nflight should take about a dozen hours if everything goes well. Double that if we face\nheadwinds. I have some bad news to share with you. Our internet box has just died.\nTherefore, we won't be able to offer you Wi-Fi during the duration of this flight, and\nyou won't be able to make phone calls either. To all mobile and social media addicts,\nI hope you haven't forgotten your tranquillisers... Please accept our apologies for this\ninconvenience, and I still wish you a very pleasant trip with us.\nWhile the man remains completely indifferent and continues to display a broad smile,\nthe woman's face has fallen upon hearing this message. She takes off her\nheadphones, takes out her phone, and confirms that there is indeed no network.\nHer (to herself) - Oh, this can't be true... It's a nightmare...\nSilence.\nHim – Do you know at what altitude we are?\nHer – Uh... No... And I'm not sure I want to know.\nHim – The pilot just said it!\nHer (surprised) – Sorry, I didn't listen to that part of the message...\nHim – What do you think?\nHer – I would say... eight thousand.\nHim – Thirty thousand feet!\nHer – Thirty thousand feet...?\nHim – That's about ten thousand meters. Can you believe it? Ten kilometres!\nHer – Yes, I got it... Ten thousand meters... Ten kilometres...\nHim – The distance between the centre of Paris and Saint-Denis, but vertically!\nHer – You live in Saint-Denis...\nHim – How do you know that?\n6\n\nHer – An intuition...\nHim – You'll laugh, but it's my first time on a plane.\nHer – Hun, hun...\nHim – I won a contest... A trip for two to Tokyo!\nHer – For a first flight, you hit the jackpot. It's just on the opposite side of the world.\nI hope you don't have a fear of flying, like I do...\nHim – Well, I didn't do anything extraordinary. It was a lottery...\nHer – Ah, yes...\nHim – In business class, can you imagine? So I don't even know what it's like in\neconomy class...\nHer – Yeah...\nHe nods towards the cabin.\nHim – Do you know what it's like down there?\nHer – In Japan?\nHim – In economy class!\nHer – Ah! Uh...\nHim – I imagine they don't get champagne there.\nHer – Certainly not, no... And they probably don't even get water...\nHim – Damn! And since they take away all liquids before boarding in case they're\nexplosives... Can you imagine? Twelve hours of just sitting there without drinking\nanything!\nHer – Sitting? Are you kidding? They don't even have enough seats for everyone to\nsit at the same time in there... No, most people travel standing up, like on the\nsubway... Holding onto a bar if they're lucky. And they take turns sitting...\nHim – Seriously?\nHer – That's why the flight attendants hide them behind the curtain... It is to spare us\nsuch a sad sight... However, we know they are there... A moment ago, I thought I\nheard a baby crying... Of thirst, to doubt...\nHim – But that's terrible!\nA moment during which she looks at him, surprised by his gullibility.\nHer – No, but I'm kidding, there...\nHim – Ah, I see...\n7\n\nHer – Economy class isn't that different from business class, you know. The seats\nmight be a little less wide, but not by much. And champagne is only available for an\nadditional charge.\nHim – Then why are you traveling business class?\nHer – Why?\nHim – You didn't even have champagne!\nHer – Yeah, that's silly. To put it mildly usually, in business class, as you call it, it's a\nbit quieter...\nHim – You mean that usually, you don't run into people like me...\nHer – Sorry, that's not what I meant... It's my assistant who takes care of my flight\ntickets. I guess she's never thought of booking me a seat in economy class, just for a\nchange...\nHim – No, no, it's me... I don't know why... I imagined it was like on the Titanic...\nHer – The Titanic?\nHim – Have you seen the movie?\nHer – Yes, like everyone else... Let's just say I try not to think about it too much\nwhen I'm flying to Tokyo.\nHim – So you're going to Tokyo too?\nHer – It's a non-stop flight, I think everyone's going there, right? Unless part of the\nplane is going directly to Bangkok or Singapore... maybe in economy class...\nHim – Right, I'm stupid... This isn't the train, where sometimes there's a part of it\nthat... Although, I don't know, I've never taken an high-speed train either...\nHer – You're not a big traveler, I understand... But you have taken a regular train,\nright? Or, I don't know, the subway?\nHim – Oh, yeah, definitely! Every morning to go work from Saint-Denis, actually.\nHer – But what was the point of bringing up the Titanic, apart from making me\nnervous?\nHim – You will remember, on the Titanic, he was traveling in third class! And she\nwas in first! And apparently, at that time, there was a huge social difference! From\nwhat we see in the movie anyway.\nHer – Maybe that's why they eliminated third class on airplanes and there's only one\nclass on the subway...\nHim – The democratisation of transportation...\nHer – You could almost say it is the end of class struggle.\n8\n\nHim – It's funny, now that I think about it, he also won his ticket in a game...\nHer – He?\nHim – Di Caprio! He won the ticket to America by playing cards! And that's why he\nwas able to prevent Kate Winslet from committing suicide!\nHer – The proletarian arriviste and the depressed billionaire. Another way to put an\nend to class struggle...\nHim – The beginning of a great love story, though...\nHer – Great... which ends rather badly, anyway.\nHim – Oh, really? Their love story ends badly?\nHer – Even if we don't remember all the details of the movie... A love story that\nbegins on the Titanic can hardly end well, can it...?\nHim – We've been flying for two hours now. We should be flying over Siberia soon,\nright?\nHer – Mmm...\nHim – Ten kilometres above ground level... Did you listen carefully to the safety\ninstructions earlier? I'm not sure I understood everything...\nHer – Anyway, in case of a nosedive over Siberia, you know... I don't think a simple\nwaist float would save us...\nHim – Are you sure you don't want a glass of champagne? Who knows, it might be\nthe last drink of your life...\nHer – No, thank you.\nHim – It's not too late, you know? I think if you press this button here, we can\nsummon the flight attendant...\nHer – I took a little relaxant before boarding. I'd rather not mix things up...\nHim – It's the first time in my life that I could just push a button and have a pretty\nwoman appear, ready to fulfill all my desires for free. I confess I'm quite tempted to\ndo it. Maybe I'm already in heaven...\nHer – Times have changed, you know... Now there are also women as passengers in\nbusiness class. And sometimes, it's a male flight attendant who comes when you\npress the button...\nHim – As long as he brings us some champagne.\nHer – I'm sorry, but I really can't join you. I need to have a clear mind when I arrive\nin Tokyo. And with Xanax on top of jet lag, it's already a challenge...\n9\n\nHim – Ah, yes, jet lag! That's new to me too... The farthest I've ever been was to La\nBourboule on my honeymoon, so of course... I don't remember that anymore. In\nTokyo, is it 12 hours ahead?\nHer – 10 hours.\nHim – So it's like we're losing ten hours of our lives! It's crazy, if you think about it!\nHer – Well, yes...\nHim – But where do we spend those ten hours? In the Twilight Zone?\nHer – The Twilight Zone...?\nHim – That old American series, you know... In black and white...\nHe hums the theme tune from the Twilight Zone.\nHim – Tin lin lin lin, tin lin lin lin, tin lin lin lin...\nShe starts to get a little worried.\nHer – Yes, yes, I see...\nHim – Well, there's an episode that takes place on a plane...\nHer – After Titanic, the Twilight Zone... You really decided to scare me...\nHim – Sorry... I won't tell you what happens in that episode, I promise... But I can\ntell you that it was very scary, indeed...\nHer – But tell me, did you say you won a trip to Tokyo for two people?\nHim – Yes.\nHer – What did you do with your wife? Is she standing in economy class? Or has she\nalready disappeared into the Twilight Zone?\nHim – My wife passed away.\nHer – I'm really sorry for your loss...\nHim – In fact, it was my wife who signed up for the contest... She died shortly after\nwinning.\nHer – Due to the excitement, perhaps...?\nHim – We're not sure exactly.\nHer – You don't have to tell me...\nHim – She worked for a frozen food wholesaler... When they called her on her\nmobile to tell her she had won, she was busy stacking pallets of minced steak in the\ncold room. It was a Friday afternoon. Her colleagues didn't notice anything. She\nprobably felt dizzy...\n10\n\nHer – That's dreadful...\nHim – I had gone to my mother's in Clermont-Ferrand. I go there twice a month. I\nwasn't worried either. When they found her on Monday morning, she was as stiff as a\nboard.\nHer – Oh my God!\nHim – She has still the mobile phone in her hand... I even thought about keeping her\nlike that, in case she could be revived one day.\nHer – When medicine would have made progress...\nHim – But... since my wife was quite corpulent, it would have been impossible to fit\nher into our freezer. And then there would have been a lot of administrative\nprocedures to go through. I'm a bit in the game and I'm not one of those who likes to\ntake work home...\nHer – Do you work in the appliance industry?\nHim – And then I thought it wasn't doing her a favour. Can you imagine our plane\ncrashing in the north of Siberia, being trapped in the ice, and then being defrosted in\ntwo or three hundred years later?\nHer – Not really... I think I'll take another Xanax...\nShe swallows a pill.\nHim – And that's how I ended up in business class.\nHer – Just like that?\nHim – Well, since I was traveling alone now, of course. You can imagine that in such\na short time, finding someone to replace my wife... So instead of two economy class\ntickets, they offered me a business class ticket.\nHer – You're not kidding me, are you? Like I did earlier with economy class?\nHim – I wouldn't joke about that, believe me... She was still my wife after all...\nHer – I'm sorry, but you don't seem very...\nHim – Affected...? Listen, I'll let you in on a secret: my wife and I were already a bit\nat odds for a few years... You can't say she was a very... warm person. It's strange to\nsay that, considering she ended up frozen between two piles of frozen steaks, isn't it?\nDo you think the way you die has a meaning? I mean... in relation to the way you've\nlived?\nHer – No idea...\nHim – Anyway, I'm sorry she's dead, of course, but... I can't say I'm devastated, I\nadmit. So why pretend, huh?\nHer – Life goes on.\n11\n\nHim – And this baptism of air, it changes my mind a little. Even though it's true that\noriginally, it was with her that I was supposed to go to Tokyo...\nHer – Especially since she was the one who won that trip.\nHim – Yes.\nHer – And... what was this contest?\nHim – Oh, just a checkbox in a magazine. You just had to send back the participation\ncoupon for the draw. And it had to fall on her...\nHer – A magazine, you say?\nHim – A sensationalist magazine, yes.\nHer – Which magazine?\nHe shows her the cover of the magazine lying on the floor at his feet.\nHim – Here, the one you're reading, actually!\nHer – Ah...\nHim – Don't tell me you also won a trip to Tokyo, and your husband had a heart\nattack upon hearing the news!\nHer – Um... no...\nHim – No, because then we could really talk about a sign from destiny. Proof that we\nwere meant to meet...\nHer – Actually, it's... I organised that contest. Well, my newspaper did...\nHim – Your newspaper...?\nHer – Sensational... I'm the director...\nHim – No? That's incredible! Sensational is you? That's... sensational.\nHer – I'm really sorry about your wife... So, I feel a bit responsible...\nHim – It's true that without this contest, maybe my wife would be sitting here next to\nme. (Coming forward to her) Instead of you...\nHer (defensive) – Yes, well... On the other hand, without this contest, you would\nnever have taken this plane to Tokyo...\nHim – You're right... And even if my wife hadn't been frozen when she found out she\nwon, we would be sitting behind that curtain. In economy class! Instead, I'm sitting\nhere next to you in business class!\nHer – Let's just say it's destiny then...\nHim – Still, it's a strange coincidence, isn't it?\n12\n\nHer – Strange, I don't know if that's the word, but...\nHim – And what are you going to do in Japan then? Since you're not on vacation!\nHer – Sensational is creating a Japanese edition of the magazine. I'm going to Tokyo\nfor the launch of the first issue. It's very important for us. We've invested a lot in this\nproject. That's also why I'm so nervous...\nHim (picking up the magazine) – Sensational... So, you deal with gossip and\nwomen's beauty around the world.\nHer – That's more or less the editorial line of our magazine, indeed.\nHim – Well, believe it or not, you and I do similar work.\nHer – Oh, really? Do you also deal with gossip and the beauty of women? What do\nyou do, if I may ask? Are you a hairdresser?\nHim – Among other things, yes... I do make-up, nails, and hair for women. But only\nwhen they're dead...\nHer – Excuse me?\nHim – I'm an embalmer.\nHer – I see...\nHim – So I work to make women beautiful. Well, more like giving them a human\nappearance... And as for the gossip of the world, I assure you, I find out about a\ncelebrity's death before the press does.\nHer – It sounds interesting...\nHim – Naturally, when someone dies, famous or not, after the police, we're the first\nones on the scene... We know when, where, how, with whom...\nHer – I see... I never would have thought to contact a funeral home for information,\nbut I assure you it's tempting... Can you give me a business card?\nHim – But be careful, we're bound by professional secrecy! Like doctors, priests, or\nprostitutes.\nHer – Of course... But you know that, as journalists, we have a duty to keep our\nsources of information confidential.\nHim – It's still amazing that we're sitting next to each other on this plane, isn't it? Do\nyou believe in destiny?\nHer – Destiny... That's what superstitious people call coincidence, isn't it?\nHim – That's very beautiful what you just said... It sounds like a Japanese proverb...\nHer – Yes... Sometimes, under Xanax, I invent a few of them...\n13\n\nHim – I really would like to call my mother and tell her who I'm sitting next to. She's\na very loyal reader of Sensational, you know... Do you mind saying a few words to\nher? Otherwise, she'll never believe me...\nHe takes out his mobile phone.\nHer – I'd be delighted... But I'm afraid you'll have to wait until you get to Tokyo to\ncall your mum.\nHim – And why's that?\nHer – Because the flight attendant said that the airplane's wifi network was down\nHim – Oh, really...? It's really the Twilight Zone...\nHe puts away his phone.\nHer – Twelve hours without calling or sending a WhatsApp... Believe me, for many\npeople, it's worse than twelve hours without eating or drinking...\nHim – Yes... Especially for the director of a sensationalist magazine, I imagine... So\nif you learned something sensational, right now, you wouldn't be able to tell anyone...\nHer – A sensational piece of news?\nHim – A scoop, as they say in your line of work.\nHer – At the same time, I don't see what kind of scoop one could learn on a plane\ncompletely cut off from the world.\nHim – Ah... Who knows...\nHer – Except if the pilot announces that we've lost an engine and we're about to crash\nin the middle of Siberia, of course.\nHim (mysteriously) – Hun, hun...\nHer – Of course, that wouldn't be news unless there were one or two celebrities on\nboard.\nHim – And who's to say there aren't?\nHer – You intrigue me...\nHim – What if I told you something that no one else knows yet...\nHer – You?\nHim – I told you... There are some things that a funeral director is among the first to\nknow...\nHer – Well, go ahead...\nHim – Do you promise me that there's no way for you to get this scoop off this plane\nuntil it lands in Tokyo?\n14\n\nHer – Unfortunately... Not even if it's the scoop of the century...\nHim – Believe me when I tell you it's mind-blowing... Something that won't hit the\nmedia for another 12 hours.\nHer – I have to admit, you've piqued my curiosity... I'm all ears...\nHim – Hold on tight: Mireille Mathieu is no longer with us.\nHer – Mireille Mathieu?\nHim – Mireille Mathieu.\nHer – That's your scoop?\nHim – Yes, Mireille Mathieu!\nHer – But she hasn't sung in over thirty years!\nHim – In France, yes.\nHer – Well, yes, in France.\nHim – She still sang at Place de la Concorde on the day of Sarkozy's election.\nHer – The death of Mireille Mathieu... If we put it on the cover of Sensational, our\nreaders will be very surprised. The younger ones will wonder who died, and the older\nones will say, \"Oh really, I thought she was already dead.\"\nHim – Wait, do you know what Mireille Mathieu represents in Japan?\nHer – What?\nHim – She is simply the most famous French celebrity among the Japanese. They\nworship her like a cult figure. Mireille Mathieu, for the Japanese, is like, I don't\nknow... Kim Jong-un for the North Koreans.\nHer – Maybe because she looks a little like him... It's true that with the lock of hair\nand sunglasses, she looks a little like him...\nHim – You don't realize! When the Japanese learn of Mireille Mathieu's passing, they\nwill declare three days of national mourning!\nShe thinks and seems to realize the importance of the news.\nHer – It's true that she's very popular there... Much more than in France, anyway.\nHim – Mireille Mathieu! It's the only thing France managed to export to Japan! Can\nyou imagine the scoop for the launch of the Japanese version of your magazine\nSensational!\nHer – You're right... It would be huge... An extraordinary publicity stunt... And\ntotally free... A real scoop... A Japanese scoop, anyway.\nHim – A worldwide scoop, you mean. Because she's also very popular in Russia.\nEven in Siberia!\n15\n\nHer – And are you sure she's dead?\nHim – I washed her myself before cremating her. Believe me, I'm in a good position\nto know that she's really dead.\nHer – And why would we hide her death, then?\nHim – Just for a few hours. It's very common, you know. Just enough time for the\nfamily to mourn quietly. And to organize the funeral without any trouble. To figure\nout whether to bury her at the Pantheon or...\nHer – Or...?\nHim – That's the second scoop.\nHer – Mireille Mathieu will be buried at the Pantheon, next to Jean Moulin?\nHim – No, actually. To thank the loyal Japanese public for all these years, when the\nFrench public had already buried her, she expressly requested in her will that her\nashes be scattered above Mount Fukushima.\nHer – You mean Mount Fujiyama, I imagine... So we're going to transfer her ashes to\nJapan?\nHim – And that's where I come to the third and final scoop...\nHer – Oh, because it's not over...?\nHim – I advise you to buckle your seat belt so you don't jump to the ceiling, because\nthis is heavy... Super heavy...\nHer – What now?\nHim – She's on this plane!\nHer – Who?\nHim – Mireille Mathieu!\nHer – I thought she was dead! I need to stop taking Xanax...\nHim – Her ashes!\nHer – No...?\nHim – It's probably also to prevent her French fans from opposing this transfer that\nher manager decided to keep the secret until the urn arrives in Japan.\nHer – The urn? What urn?\nHim – Are you kidding me? The urn containing Mireille Mathieu's ashes! If her Fan\nClub had known that we were transferring her ashes to Japan, there would have\nsurely been some riots! I can already imagine the most enraged fans lying on the\nrunway to prevent the plane from taking off...\n16\n\nHer – I see... Like those trains that transport nuclear waste and are blocked by\nenvironmentalists...\nHim – Mireille Mathieu is still part of the national heritage! It's a historical\nmonument! Maybe in ruins, but a historical monument!\nHer – Of course...\nHim – On the other hand, can you imagine the scenes of collective hysteria at Tokyo\nairport if the Japanese knew she was on board this plane?\nHer – You can't be serious.\nHim – Her ashes are in the hold of this aircraft, I'm telling you! Right there, under\nour feet!\nHer – Under our feet...?\nHim – On my wife's head!\nHer – Because your wife's body is also in the hold?\nHim – No... I mean, I swear on my wife's head!\nHer – And how did you find out she was on board this plane?\nHim – That was quite by chance. I had no idea she was taking the same plane as me.\nBut when I checked in my luggage, I recognized her manager who was in line just in\nfront of me. And above all, I recognized the package he was carrying in his hand!\nHer – The package?\nHim – The urn! I wrapped it myself. You can imagine it's quite fragile. And there's\nnot a question of taking it as hand luggage!\nHer – It could end up going around the luggage carousel like an ordinary suitcase.\nHim – Even though she's traveling incognito, I think they take special precautions...\nHer – I see... Like when an organ is transported in a refrigerator for an urgent\ntransplant. For example, a heart or a kidney...\nHim – Yes, well, but there are ashes... It's not about frozen liver fillets or steaks...\nShe seems to be slowly digesting so much information.\nHer – Ah, yes, it's quite a scoop, indeed.\nHim – Sure, for the first issue of your magazine in Japan, it would be a hit... 130\nmillion inhabitants, can you imagine? Twice as many as in France...\nHer – It would be a collector's issue, for sure. Something that only happens once in\nthe life of a magazine. To release such a bombshell in the first issue of Sensational in\nJapan!\n17\n\nHim – Unfortunately, no phone, no scoop... You have no way of transmitting the\ninformation to your editorial team... Not until we arrive in Tokyo, in about ten\nhours...\nHer – By that time, the magazine will already be printed. They must be about to put\nit into the machines! It's now that I should be able to reach them... In ten hours, it'll be\ntoo late!\nHim – And in about ten hours, it probably won't be a scoop anymore...\nHer – Do you think so?\nHim – You can't keep something like this a secret for very long...\nShe seems completely depressed.\nHer – There has to be a way to let them know.\nHim – At the same time, I told you because I was sure it wouldn't leave here... I'm\nbound by professional secrecy. I could lose my job...\nHer – Mmm...\nHim (standing up) – Well, excuse me, but I need to go to the toilet.\nHer – Mm-hmm...\nHim (pointing to the back of the room) – I'll go to the ones at the back there, so I can\nsee what economy class looks like on the way...\nHe stands up.\nHer – How is the idiot who broke the Wi-Fi on this plane?\nHim – You can't use phones in theatres either. And sometimes it lasts for hours...\nHe crosses the room, observing the rows of spectators with a curious and somewhat\nmocking expression as he passes. He then addresses the audience, which may be",
+      "start": 375.6,
+      "end": 2134.0,
+      "duration": 1758.4,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "surprise",
+          "score": 0.75
+        },
+        {
+          "emotion": "fear",
+          "score": 0.6
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 4396,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_005",
+      "scene_number": 5,
+      "text": "partially modified or supplemented by improvisation depending on the inspiration of\nthe actor and the reactions of the audience.\nHim – Everyone managed to sit down in the end... (To a spectator) Are you alright?\nNot too cramped? (To another) Don't worry, I'm just passing through. I'm going to\nthe toilet. (To a third) Are you allowed to use them, or...? (To a fourth) I hope you\ntook precautions before boarding... (To a fifth) Oh, you'll need to remember to fasten\nyour belt. No, not the seatbelt, your own belt... (To a sixth) Oh, it's your fly...\nHe exits.\nHer (looking crazy) – Mireille Mathieu... But this is insane! (She swallows another\npill) I don't think today was the right day to stop taking antidepressants...\nBlackout.\n18",
+      "start": 2134.0,
+      "end": 2184.8,
+      "duration": 50.8,
+      "emotion": "tension",
+      "emotion_confidence": 0.8,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.7
+        },
+        {
+          "emotion": "humor",
+          "score": 0.6
+        }
+      ],
+      "sentiment_score": 0.8,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.8
+      },
+      "word_count": 127,
+      "narrative_role": "rising_action",
+      "mood_shift": "sudden"
+    },
+    {
+      "scene_id": "scene_006",
+      "scene_number": 6,
+      "text": "ACT 2\nThe lights come back on as a flight attendant's voice is heard over a loudspeaker.\nFlight attendant (extremely politely) – We will soon be crossing a turbulence zone.\nAll passengers are requested to return to their seats, fasten their seatbelts, and remain\nseated until the light signal goes off. Thank you for your understanding.\nHe crosses the room again, pretending to sway a bit. He holds a champagne glass in\nhis hand, taunting the spectators with it.\nFlight attendant (sternly) – Hey, you over there, do you understand? Go back to\nyour seat and shut up, alright!\nHe hurries along, still stumbling a bit due to the supposed movements of the aircraft,\nand spills a bit of the precious liquid on one of the spectators.\nFlight attendant (again polite) – Oh... I'm sorry, sir, I didn't realize you were a\nbusiness class passenger...\nHe returns to sit next to her.\nHim – You were right. There's not much difference between economy class and\nbusiness class. However... so crowded! Everyone packed like sardines. The seats are\nnarrower, and there's no way to stretch your legs.\nHer – Mm-hmm...\nHim – At least I managed to bring you a glass of champagne... Well, what I could\nsave of it. I confess it was mostly for the pleasure to cross the entire economy class\nwith a glass of champagne in hand.\nDistracted, she mechanically takes the glass of champagne he offers.\nHer – Thank you...\nHim – You're still thinking about what I've told you, aren't you... I shouldn't have\nmentioned it...\nHer – There are many magazines like mine that would pay a lot of money to have a\nscoop like this before anyone else, you know?\nHim – And I gave away the news for free...\nHer (hysterical) – But if I can't publish it, it's worth nothing! (Calming down) It's the\nworst torture you can inflict on the director of a sensationalist magazine! To have the\nnews of the century at your fingertips and not be able to use it...!\nHim – Yes, I can imagine... A true Japanese torture... (She gives him an angry look)\nYou should try to get some sleep...\nHer (hysterical again) – Do you think I'll be able to sleep now? (Calming down)\nThere must be a way...\n19\n\nHim – Apart from being dropped by parachute over Siberia... hoping to land on top\nof a phone booth. Because I'm not sure the network coverage is excellent in these\ndesert areas.\nHer – Do you think the pilot would agree to open the aircraft door in mid-flight?\nHim – Have you ever gone skydiving?\nHer – It can't be very complicated...\nHim – I'm not even sure there carry parachutes on board... It's silly, actually, because\nin a plane, above Siberia, it would be more useful in case of a malfunction than life\njackets...\nHer – What if the plane still made a stopover?\nHim – Unless it's an emergency, it won't be easy to convince the pilot to land in\nIrkutsk or Novosibirsk.\nHer – I was thinking... about a hijacking.\nHim – Hijacking a plane and forcing the pilot to land, just to make a phone call?\nThat's maybe a bit excessive, don't you think?\nHer – You think so too...\nHim – And what are you going to threaten the pilot with? With the plastic spoon the\nflight attendant gave you earlier to stir your coffee?\nShe thinks.\nHer – Do you remember that bearded guy who hid a bomb in his shoes?\nHim – Yes...\nHer – I could tell the steward that I have a bomb in my underwear and I'm ready to\nblow it up if the plane doesn't land immediately.\nHim – Yeah... but you're not bearded. Why would the director of Sensational hijack a\nplane to land in Siberia?\nHer – I don't know... To ask for political asylum...\nHim – Political asylum?\nHer – Fiscal asylum?\nHim – Even if they believed you... You'd be arrested immediately upon your descent\nfrom the plane, even before you could make a phone call to your lawyer...\nHer – That's true...\nHim – Oh, the signal light is going off!\nHer – What if you're the terrorist?\n20\n\nHim – Sorry?\nHer – They arrest you, and then I can call my editorial office calmly!\nHim – Hey, wait a minute! I don't want to spend the next twenty years of my life in\nthe Gulag or Guantanamo just so you can have your headline tomorrow about the\ndisappearance of the greatest Japanese singer of all time.\nHer – But it's true that she has a little Japanese look, isn't it?\nHim – Physically, you mean?\nHer – The haircut, the anthracite colour, the slanted eyes... That's probably from\ngetting pulled too much, but oh well...\nHostess (coquettishly) – Mr. Jacques Dumortier is invited to present himself to one of\nour hostesses for his chosen service.\nHim (excited) – That's me! I have to leave you again for a moment. It's part of the\ntrip I won...\nHer – Did you win the right to hook up with a hostess?\nHim – Unfortunately, I'm only invited to take a tour in the cockpit...\nHer – She mentioned the service of your choice...\nHim – I could choose between holding the pilot's handle for a moment or a pack of\nduty-free cigarettes. But since I quit smoking...\nHer – Ah, I see...\nHim – You organized this contest! Don't you remember?\nHer – Oh my God, the pilot!\nHim – What...?\nHer – He can communicate with the ground!\nHim – Oh, yes, of course.\nHer – He could send a message to the control tower.\nHim – What kind of message? Hello Papa Tango Charlie! Attention! Mireille\nMathieu is dead! I repeat, Mireille Mathieu is dead!\nHer – Why not?\nHim – If she didn't die on the plane... The control tower might not be very",
+      "start": 2184.8,
+      "end": 2584.4,
+      "duration": 399.6,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "humor",
+          "score": 0.75
+        },
+        {
+          "emotion": "anxiety",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 999,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_007",
+      "scene_number": 7,
+      "text": "interested...\nHer – You're right... (She thinks) Okay, so we tell the pilot that we urgently need to\ncontact our family in Tokyo... and we take the opportunity to pass the information to\nmy newspaper.\n21\n\nHim – Our family?\nHer – I'll pretend to be your sister.\nHim – I don't have a sister.\nHer – They're not supposed to know, are they?\nHim – Let's say they don't... But our family in Tokyo? Neither of us really looks\nAsian.\nHer – I don't know... We tell them we were adopted together at birth by a Japanese\ncouple.\nHim – Adopted together at birth? It's obvious we're not twins...\nHer – So what?\nHim – So we couldn't have been adopted together at birth!\nHer – Well, in that case, you go alone and tell them you absolutely need to reach\nyour wife right away!\nHim – Well, my wife, they know she's dead – that's why they upgraded me to\nbusiness class!\nHer – Are you doing this on purpose? No matter what we tell them, we'll find\nsomething!\nHim – I'm listening.\nHer – They told you that you're entitled to any service of your choice! I'll give you\nthe number to call on my behalf in Tokyo. You act as if you're calling your mother to\nsay hello from the cockpit, and that's it...\nHim – My mother lives in Clermont Ferrand.\nHer – I've got it! We'll play the melodrama card...\nHim – You're scaring me.\nHer – You tell them your mother has terminal cancer and went to Japan to be treated\nby the best specialist. You were going to see her, but the surgery had to be moved up\nbecause her condition suddenly worsened.\nHim – My poor mother...\nHer – That's perfect, you're right, we absolutely have to get their sympathy... So\nyou're afraid your mother won't make it out of the operating room alive, and you want\nto say a final goodbye, just in case.\nHim – Oh my God...\nHer – I remind you that it's just a story.\nHim – You're right.\n22\n\nHer – And on the phone, you take the opportunity to also discreetly slip into the\nconversation that Mireille Mathieu has died.\nHim – Well, that... That's not going to be easy to bring up. My mother hates Mireille\nMathieu. Almost as much as she hated my wife...\nHer – But it's not your mother you'll have on the line, it's the editor of the Japanese\nversion of Sensational!\nHim – Oh, yeah, that's right...\nHer – Do you think you can handle it?\nHim – How much?\nHer – Sorry?\nHim – You said any magazine would pay a fortune to have this information before\nanyone else...\nHer – That was when I thought there was no way to get this scoop to the magazine...\nHim – So?\nHer – A thousand? (He doesn't seem satisfied) Ten thousand?\nHim – It's about the success or failure of the launch of your magazine in Japan.\nHer – Okay, I'll go up to fifty thousand, but no more.\nHim – For that amount, I'm willing to land this plane on top of a telephone booth\nmyself.\nShe prepares the check, but suddenly has a doubt before handing it to him.\nHer – And how will I know that you really delivered the message? If I can't come\nwith you in the cockpit...\nHim – I can be very persuasive when I want to be, believe me... Take it or leave it.\nShe hands him the check. Then she writes something on a business card before\nhanding it to him too.\nHer – You call this number on my behalf, and you tell the person who answers to\nurgently prepare the obituary of Mireille Mathieu. She'll understand.\nHim (philosophically) – It's sad, but after all, we'll all die one day, won't we? (She\ngives him an impatient look) I'm going...\nHe leaves, this time towards the backstage. She calls out to him before he exits.\nHer (in a low voice) – And don't say anything about this to the economy class\npassengers, okay?\nIn a daze, quite overexcited, she downs the glass of champagne to wash down\nanother pill.\n23\n\nHer (to the audience) – Have you all turned off your cell phones, at least? Because\nit's a safety issue! It can be very dangerous, you know. The controls could be\njammed... Or the electrical system could fail... I don't want to tell you the\nconsequences of a short circuit at this altitude. Because we're flying high, very high!\nIf this falls, we'll be turned into mincemeat.",
+      "start": 2584.4,
+      "end": 2896.0,
+      "duration": 311.6,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "humor",
+          "score": 0.75
+        },
+        {
+          "emotion": "anxiety",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 779,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_008",
+      "scene_number": 8,
+      "text": "ACT 3\nShe is sleeping with a magazine on her lap. She wakes up abruptly with the sound of\nthe speaker. Noises are heard as if there's a struggle, hitting, shouting, and coupling\non the microphone. Then, absolute silence. The other returns. His clothes are in\ndisorder, and he seems breathless.\nHer – Don't tell me that you finally have sex with the flight attendant without her\nconsent?\nHim – No, not at all... I wish that was it!\nHer – Then the pilot didn't let you make a phone call.\nHim – No, no... I called my mother in Clermont-Ferrand to say hello from the\ncockpit, as we agreed...\nHer – In Clermont-Ferrand?\nHim – And I told her that Mireille Mathieu had died. Don't worry, she was watching\nthe news on television and no one knows yet...\nHer – No, but tell me it's not true! Tell me I'm dreaming, that it is a nightmare!\nHim – It was only afterwards that I realized I had dialed the wrong number...\nHer – And then?\nHim – I asked the pilot if I could make another call, and he replied that we were in a\ncockpit, not a phone booth. From there, things degenerated.\nHer – What do you mean by \"degenerated\"?\nHim – He insulted my mother...\nHer – Really?\nHim – I told you that I could become violent when certain topics are touched... And\nfor me, my mother is a sensitive subject...\nA flight attendant makes another announcement.\nFlight Attendant – Ladies and gentlemen, please pay attention. Both the pilot and\ncopilot have suffered... a slight discomfort. But don't worry, we will certainly be able\nto revive one of them before losing too much altitude. Let's say they are not well.\nYou should not worry because we will probably be able to revive one of them before\nlosing too much altitude. If there is a doctor on board, please come to one of our\nflight attendants... (Silence) If there is a pilot on board, please make yourself known.\nIt's urgent...\nHer – Oh my God!\n25\n\nHim – I think I went too far... But you're also to blame. Fifty thousand euros is a\nconsiderable amount... An amount that goes to your head... Fifty thousand euros!\nWith that, I could buy a huge freezer.\nHer – A freezer...?\nHim – It's for my mother... In case she really does have an incurable cancer, as you\nsay.\nHer – Okay...\nHim – I'll freeze her until we find a definitive cure for death. It seems they've just\ntested a new enzyme on rats! Did you know that some jellyfish are immortal?\nShe looks at him bewildered, when the loudspeaker comes back on.\nFlight Attendant – Ladies and gentlemen, in the absence of an experienced pilot, I\nwill attempt an emergency landing in Novosibirsk. Please fasten your seat belts\nbecause I'm not even able to park my car in reverse. I have trouble distinguishing the\nbrake from the clutch... I always confuse them... Now, at least, I can say that I have a\ngood grip on the pilot's lever... Glup... No, this is not the lever...\nHer (hysterical) – An emergency landing! But that's great! I can finally call my\noffice in Tokyo!\nHim – I think it's time for us to put on our life jackets.\nThey take out duck-shaped floaters and put them around their waists. The sound of a\nplane plummeting.\nBlackout.\n26",
+      "start": 2896.0,
+      "end": 3127.2,
+      "duration": 231.2,
+      "emotion": "tension",
+      "emotion_confidence": 0.85,
+      "secondary_emotions": [
+        {
+          "emotion": "fear",
+          "score": 0.75
+        },
+        {
+          "emotion": "humor",
+          "score": 0.65
+        }
+      ],
+      "sentiment_score": 0.85,
+      "theatrical_context": {
+        "predicted_theme": "tension",
+        "confidence": 0.85
+      },
+      "word_count": 578,
+      "narrative_role": "climax",
+      "mood_shift": "sudden"
+    },
+    {
+      "scene_id": "scene_009",
+      "scene_number": 9,
+      "text": "ACT 4\nThe first notes of the Twilight Zone theme song play. The stage lights up on an\napocalyptic scene of general chaos. Seats overturned, clothing strewn about, and\nsmoke if possible. The syrupy voice of the hostess is heard again over the\nloudspeaker.\nHostess – Flight 714 from Paris to Tokyo has just landed… somewhere. The director\nand his crew wish you a pleasant stay. We hope you had an excellent trip, and pray to\nsee you again soon, alive, on our flights.\nThey gradually regain consciousness.\nHim – Do you think we're dead?\nShe tries to make a call with her cell phone.\nHer – There's no network, at least…\nHim – Maybe we're in the Twilight Zone…\nHer – Or maybe it was just a nightmare, and we're not fully awake yet...\nShe spots something in the chaos and picks it up. It's the urn containing Mireille\nMathieu's ashes, with her photo on it. They exchange a perplexed look.\nHim – We're in a desert, but it doesn't really look like Siberia.\nHer – Do you think we're the only survivors?\nHim – Unfortunately, I don't think so...\nHe discreetly signals for her to look towards the audience.\nHer (in a low voice) – Who are all these people over there, in the dark?\nHim – Aren't they from economy class?\nHer – Economy class?\nHim – Come on, the ones from economy class!\nHer – They seem to be staring at us…\nHim – And they're not moving…\nHer – Do you think they're dead?\nHim – Or maybe they're asleep.\nHer – Like it happens sometimes in the theatre…\nHim – I think it would be better not to wake them up.\nHer – So what do we do then?\n27\n\nHim – Above all, no sudden movements… We stay calm… And we move slowly\ntowards the exit…\nHer – What exit?\nHim – The emergency exit…\nHer (very disturbed) – I think I need a little relaxation before… (She rummages in\nher bag) Oh my God, someone stole all my pills!\nHim (emphatic) – When you're at the theatre and you're lucky enough to have pills,\nyou shouldn't leave them lying around...\nHer – The producer is a crook. He probably slipped a sleeping pill into our\nchampagne before taking off with the box office...\nHim – What a story! Do you think the press will talk about us?\nHer – There would have to be a journalist in the audience.\nHer – I hope at least one flight attendant is still alive.\nHim – What for?\nHer – To draw the curtain between business class and economy class!\nThey cautiously retreat towards the backstage area.\nFlight Attendant – I hope the power doesn't go out again!\nBlackout.\nFlight Attendant – Shit! The power went out again.\nIf possible, play a song by Mireille Mathieu preferably in Japanese.\n28",
+      "start": 3127.2,
+      "end": 3321.2,
+      "duration": 194.0,
+      "emotion": "fear",
+      "emotion_confidence": 0.8,
+      "secondary_emotions": [
+        {
+          "emotion": "tension",
+          "score": 0.7
+        },
+        {
+          "emotion": "humor",
+          "score": 0.6
+        }
+      ],
+      "sentiment_score": 0.8,
+      "theatrical_context": {
+        "predicted_theme": "fear",
+        "confidence": 0.8
+      },
+      "word_count": 485,
+      "narrative_role": "rising_action",
+      "mood_shift": "gradual"
+    },
+    {
+      "scene_id": "scene_010",
+      "scene_number": 10,
+      "text": "ACT 5\nThe scene lights up and/or the curtain opens again, as if for the actors' salute. The\nset is the same as in the first act: two seats side by side, which could just as easily be\nthose of a theatre. He is dozing off next to the same woman as before, who has traded\nher businesswoman suit for a much more ordinary outfit. Depending on the director's\nchoice and the size and possibilities of the room, she and he could also be seated\namong the audience in this epilogue, as at the beginning of the show. She shakes him\na little to wake him up.\nHer – Steven... Hey Steven... (As he doesn't react, she shakes him more violently)\nSteven!\nHe wakes up with a start, as if he's coming out of a nightmare.\nHim (panicked) – What? What's going on? Is something happening?\nHer – Well, it's over!\nHim – So, are we dead?\nHer – I don't think so, no. (Lower) Or maybe the expression \"dying of boredom\" is\nnot just a metaphor.\nHim – But where are we?\nHer – Where do you think we are...? At the theatre, of course! The play is over and\nwe have to leave... I'm not going to ask you if you liked it...\nHe looks at his wife, gradually returning to reality.\nHim – Victoria! It's you?\nHer – Well, yes, it's me... Your wife... Who else would it be?\nHim – It's crazy.\nHer – What?\nHim – I dreamt you were dead.\nHer – That's always nice...\nHim – We had won a contest. A trip to Tokyo for two. Since my wife had died, I was\nupgraded to business class, and I was travelling next to the director of a women's\nmagazine!\nHer – Your wife?\nHim – I could even drink champagne without paying any extra.\nHer – Well, that's nice...\nHim – And instead, I wake up next to you at the theatre...\n29\n\nHer – Well, you see... The dream is over... So, are we leaving or what?\nShe gets up.\nHim – Wait, I remember something else... In my dream, Mireille Mathieu had also\ndied!\nHer – Mireille Mathieu?\nHim – Tell me it's not true, she's not dead, is she?\nHer – I have no idea... It's been a long time since anyone has talked about her... Are\nyou coming or what?\nHe gets up, still a little shaken.\nHim – But what are we doing at the theatre? We never go to the theatre!\nHer – You're really starting to worry me... Do you remember that we both work at a\nfrozen food wholesaler?\nHim – Oh yes, that's right, damn it... It's the boss's wife who's playing in the play. He\ninvited us.\nHer – It's the kind of invitation you can't really refuse... The truth is, if he hadn't\ninvited all his employees, there probably wouldn't be anyone in the audience.\nHim – Is the play really that bad?\nHer – Well, we have to hurry, he's probably already waiting for us at the exit to know\nwhat we thought of the show.\nHim – It's a nightmare... But couldn't you have woken me up?\nHer – I didn't know you were asleep!\nHim – So, tell me what's the play about?\nHer – Just briefly?\nHim – You tell me roughly what it's about, and then... I'll improvise!\nHer – Well, it's quite difficult to sum up.\nHim – Yeah?\nHer – The plot is a bit complicated, you see... I would even say quite confusing...\nHim – Well, tell me what you understood...\nHer – Listen, I'm going to tell you something... I'm wondering if I didn't doze off\nbetween the end of the first act and the beginning of the fifth...\nHim – Are you kidding me?\nHer – Or maybe the play was really short...\n30\n\nHim – Damn... What the hell are we going to tell them?\nHer – Well, we'll improvise, like you said before... Anyway... Let's go... We won't\nkeep them waiting...\nHim – II'm sure we're still dreaming, that this is a nightmare and we'll wake up soon..\nThey head towards the exit.\n\nFade to black.\nEnd.\n31\n\nAbout the author\nBorn in 1955 in Auvers-sur-Oise (France), Jean-Pierre Martinez was first a drummer\nfor several rock bands before becoming a semiologist in advertising. He then began a\ncareer writing television scripts before turning to theatre and writing plays. He has\nwritten close to a hundred scripts for television and as many plays, some of which\nhave already become classics (Friday the 13th, Strip Poker). He is one of the most\nproduced contemporary playwrights in France and in other francophone countries.\nSeveral of his plays are also available in Spanish and English, and are regularly\nproduced in the United States and Latin America.\nAmateur and professional theatre groups looking for plays to perform can download\nJean-Pierre Martinez's plays for free from his website La Comediathèque\n(https://comediatheque.net/). However, public productions are subject to SACD\nfiling.\nFor those who prefer reading or working from books, printed versions of his plays\ncan be purchased from Amazon for a price similar to that of photocopying this\ndocument.\n32\n\nOther plays by the same author translated in English:\nA Cuckoo's nest\nA simple business dinner\nAn innocent little murder\nCasket for two\nCheaters\nCrisis and Punishment\nCritical but stable\nFour stars\nFriday the 13th\nHim and Her\nLovestruck at Swindlemore Hall\nNew Year's Eve at the Morgue\nOne marriage out of two\nQuarantine\nRunning on Empty\nStrip Poker\nThe Ideal Son-in-Law\nThe Window across the courtyard\nThe Worst Village in England\nWelcome aboard!\n33\n\nThis text is protected under copyright laws.\nCriminal copyright infringement will be investigated\nand may result in a maximum penalty of up to 3 years in prison\nand a EUR 300.000 fine.\nAvignon – May 2023\n© La Comédiathèque – ISBN 978-2-37705-933-1\nhttps://comediatheque.net/\nPlay available for free download\n34",
+      "start": 3321.2,
+      "end": 3720.4,
+      "duration": 399.2,
+      "emotion": "neutral",
+      "emotion_confidence": 0.7,
+      "secondary_emotions": [
+        {
+          "emotion": "surprise",
+          "score": 0.5
+        },
+        {
+          "emotion": "humor",
+          "score": 0.6
+        }
+      ],
+      "sentiment_score": 0.7,
+      "theatrical_context": {
+        "predicted_theme": "neutral",
+        "confidence": 0.7
+      },
+      "word_count": 998,
+      "narrative_role": "resolution",
+      "mood_shift": "gradual"
+    }
+  ]
+}

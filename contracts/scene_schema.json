@@ -5,71 +5,53 @@
   "type": "object",
   "required": [
     "scene_id",
-    "timing",
-    "content"
+    "script_type",
+    "time_window",
+    "text"
   ],
   "properties": {
     "scene_id": {
       "type": "string",
       "description": "Unique scene identifier (e.g. scene_001)"
     },
-    "timing": {
+    "script_type": {
+      "type": "string",
+      "enum": [
+        "timestamped_drama",
+        "raw_drama",
+        "event_schedule",
+        "cue_sheet",
+        "mixed"
+      ],
+      "description": "Detected script type"
+    },
+    "time_window": {
       "type": "object",
       "required": [
-        "start_time",
-        "end_time",
-        "duration"
+        "start",
+        "end"
       ],
       "properties": {
-        "start_time": {
+        "start": {
           "type": "number",
           "description": "Start time in seconds"
         },
-        "end_time": {
+        "end": {
           "type": "number",
           "description": "End time in seconds"
-        },
-        "duration": {
-          "type": "number",
-          "description": "Duration in seconds"
         }
       }
     },
-    "content": {
-      "type": "object",
-      "required": [
-        "text",
-        "word_count",
-        "type"
+    "text": {
+      "type": "string",
+      "description": "Raw scene text used for downstream analysis"
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
       ],
-      "properties": {
-        "text": {
-          "type": "string",
-          "description": "Raw scene text used for downstream analysis"
-        },
-        "word_count": {
-          "type": "integer",
-          "description": "Number of words in the scene text"
-        },
-        "type": {
-          "type": "string",
-          "description": "Scene type from segmenter (e.g. screenplay_scene, timestamped_scene)"
-        },
-        "header": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Scene header from script (e.g. INT. KITCHEN - NIGHT)"
-        },
-        "location": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Extracted location or stage area"
-        }
-      }
+      "description": "Extracted location or stage area"
     },
     "emotion": {
       "type": [
@@ -78,35 +60,63 @@
       ],
       "description": "Emotion enrichment added by Phase 2",
       "properties": {
-        "primary_emotion": {
+        "primary": {
           "type": "string"
         },
-        "primary_score": {
+        "primary_confidence": {
           "type": "number",
           "minimum": 0,
           "maximum": 1
         },
-        "secondary_emotion": {
+        "secondary": {
           "type": [
             "string",
             "null"
           ]
         },
-        "secondary_score": {
+        "secondary_confidence": {
           "type": "number"
         },
-        "all_scores": {
-          "type": "object",
-          "description": "Score map of all detected emotions",
-          "additionalProperties": {
-            "type": "number"
-          }
+        "accent": {
+          "type": [
+            "string",
+            "null"
+          ]
         },
-        "method": {
-          "type": "string",
-          "description": "Detection method used (ml_chunked, keyword, etc.)"
+        "accent_confidence": {
+          "type": "number"
         }
       }
+    },
+    "explicit_lighting": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Verbatim lighting cue matches from the script text"
+    },
+    "dialogue_lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "character",
+          "line"
+        ],
+        "properties": {
+          "character": {
+            "type": "string"
+          },
+          "line": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Structured dialogue extracted from the scene text"
+    },
+    "duration": {
+      "type": "number",
+      "description": "Duration in seconds"
     }
   },
   "additionalProperties": false

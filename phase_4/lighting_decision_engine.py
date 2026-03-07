@@ -12,9 +12,14 @@ Key design principles:
 """
 
 import os
+import logging
 from typing import Dict, List, Any, Optional, Protocol
 from enum import Enum
 from pydantic import BaseModel, Field
+
+from utils.openai_client import openai_json
+
+logger = logging.getLogger("phase_4")
 
 # Import config
 from config import (
@@ -47,7 +52,11 @@ class RetrieverProtocol(Protocol):
 
 
 class SimpleRetriever:
-    """Fallback retriever when Phase 3 is not available"""
+    """Fallback retriever when Phase 3 is not available.
+    Tier 1: OpenAI generates context-aware palettes.
+    Tier 2: Hardcoded DEFAULT_PALETTES.
+    Tier 3: Neutral white palette.
+    """
     
     DEFAULT_PALETTES = {
         "joy": {
@@ -95,9 +104,44 @@ class SimpleRetriever:
             "color_temperature": "cool"
         }
     }
+
+    # Cache for OpenAI-generated palettes
+    _palette_cache: Dict[str, Dict] = {}
     
     def retrieve_palette(self, emotion: str) -> Dict:
-        return self.DEFAULT_PALETTES.get(emotion.lower(), self.DEFAULT_PALETTES["neutral"])
+        emotion_key = emotion.lower()
+
+        # Check cache first
+        if emotion_key in self._palette_cache:
+            return self._palette_cache[emotion_key]
+
+        # Tier 1: Try OpenAI
+        try:
+            result = openai_json(
+                prompt=(
+                    f"Generate a theatrical lighting color palette for the emotion '{emotion}'.\n\n"
+                    f"Return JSON with this structure:\n"
+                    f'{{"primary_colors": [{{"name": "color_name", "rgb": [R, G, B]}}], '
+                    f'"intensity": {{"default": 0-100}}, '
+                    f'"transition": {{"type": "fade|snap|smooth|flicker", "duration": seconds}}, '
+                    f'"color_temperature": "warm|cool|neutral"}}'
+                ),
+                system_prompt=(
+                    "You are a professional theatrical lighting designer. "
+                    "Generate appropriate color palettes for emotions. "
+                    "Output ONLY valid JSON."
+                ),
+                expected_keys=["primary_colors", "intensity"],
+            )
+            if result:
+                self._palette_cache[emotion_key] = result
+                logger.info(f"Phase 4: OpenAI generated palette for '{emotion}'")
+                return result
+        except Exception as e:
+            logger.warning(f"Phase 4: OpenAI palette generation failed: {e}")
+
+        # Tier 2: Hardcoded defaults
+        return self.DEFAULT_PALETTES.get(emotion_key, self.DEFAULT_PALETTES["neutral"])
     
     def build_context_for_llm(self, emotion: str, scene_text: str) -> str:
         palette = self.retrieve_palette(emotion)
@@ -302,8 +346,7 @@ class LightingDecisionEngine:
         """
         self.retriever = get_retriever()
         self.api_key = api_key or os.environ.get("OPENAI_API_KEY")
-        self.groq_key = os.environ.get("GROQ_API_KEY")
-        self.use_llm = use_llm and LANGCHAIN_AVAILABLE and (bool(self.api_key) or bool(self.groq_key))
+        self.use_llm = use_llm and LANGCHAIN_AVAILABLE and bool(self.api_key)
         
         self.chain = None
         if self.use_llm:
@@ -321,17 +364,11 @@ class LightingDecisionEngine:
         
         kwargs = {
             "temperature": LLM_TEMPERATURE,
-            "verbose": LANGCHAIN_VERBOSE
+            "verbose": LANGCHAIN_VERBOSE,
+            "api_key": self.api_key,
+            "model": LLM_MODEL,
+            "max_tokens": LLM_MAX_TOKENS
         }
-        
-        if getattr(self, "groq_key", None):
-            kwargs["api_key"] = self.groq_key
-            kwargs["base_url"] = "https://api.groq.com/openai/v1"
-            kwargs["model"] = "llama-3.3-70b-versatile"  # Excellent Groq model for reasoning
-        else:
-            kwargs["api_key"] = self.api_key
-            kwargs["model"] = LLM_MODEL
-            kwargs["max_tokens"] = LLM_MAX_TOKENS
 
         llm = ChatOpenAI(**kwargs)
         
@@ -347,59 +384,157 @@ class LightingDecisionEngine:
         Returns:
             LightingInstruction with semantic lighting intent
         """
-        emotion = scene_data.get("emotion", {}).get("primary_emotion", "neutral")
+        # Handle both dict and string types depending on JSON mapping layer serialization output
+        emo_data = scene_data.get("emotion")
+        if isinstance(emo_data, dict):
+            emotion = emo_data.get("primary_emotion", "neutral")
+        elif isinstance(emo_data, str):
+            emotion = emo_data
+        else:
+            emotion = "neutral"
+            
         scene_text = scene_data.get("content", {}).get("text", "")
         scene_id = scene_data.get("scene_id", "unknown")
         timing = scene_data.get("timing", {})
         doc_type = scene_data.get("doc_type", "theatrical_script")
         
         if doc_type == "event_schedule":
-            return self._generate_event_instruction(scene_id, scene_text, timing)
-            
-        if self.use_llm and self.chain:
+            base_instruction = self._generate_event_instruction(scene_id, scene_text, timing)
+        elif self.use_llm and self.chain:
             try:
-                return self._generate_with_llm(scene_id, emotion, scene_text, timing)
+                base_instruction = self._generate_with_llm(scene_id, emotion, scene_text, timing)
             except Exception as e:
                 print(f"LLM generation failed: {e}")
                 if FALLBACK_TO_RULES:
                     print("Falling back to rule-based generation.")
+                    base_instruction = self._generate_with_rules(scene_id, emotion, scene_text, timing)
                 else:
                     raise
+        else:
+            base_instruction = self._generate_with_rules(scene_id, emotion, scene_text, timing)
+            
+        # V3 ARCHITECTURE: APPLY OVERRIDE HIERARCHY
+        return self._apply_v3_overrides(base_instruction, scene_data)
         
-        return self._generate_with_rules(scene_id, emotion, scene_text, timing)
+    def _apply_v3_overrides(self, instruction: LightingInstruction, scene_data: Dict) -> LightingInstruction:
+        """
+        V3 Narrative-Intelligent AI Override Hierarchy (9-Gates)
+        1. Irony Dampener
+        2. Seriousness Calibration
+        3. Confidence-Based Safety Mechanism
+        4. Temporal Stability Constraint
+        """
+        # Extract V3 metrics if available
+        v3_metrics = scene_data.get("v3_metrics", {})
+        irony = float(v3_metrics.get("irony_index", 0.0))
+        seriousness = float(v3_metrics.get("narrative_seriousness_score", 0.5))
+        confidence = float(v3_metrics.get("emotion_confidence", 1.0))
         
+        # 1. Irony Dampener: High irony flattens intensity and smooths transitions.
+        # e.g., Satirical violence shouldn't strobe violently like a real thriller.
+        if irony > 0.6:
+            for g in instruction.groups:
+                g.parameters.intensity = min(g.parameters.intensity, 60.0)
+                if g.transition.type in [TransitionType.SNAP, TransitionType.CUT, TransitionType.FLASH]:
+                    g.transition.type = TransitionType.FADE
+                    
+        # 2. Seriousness Calibration: Low seriousness puts a cap on dark/dramatic outputs.
+        if seriousness < 0.3:
+            for g in instruction.groups:
+                if g.parameters.color in ["dark_red", "deep_red", "blood_red"]:
+                    g.parameters.color = "pink" # Swap to comedic equivalent
+                g.parameters.intensity = max(g.parameters.intensity, 40.0) # Cannot be too dark
+                
+        # 3. Confidence-Based Safety Mechanism: If ML is uncertain, shift to safe neutral washes.
+        if confidence < 0.4:
+            for g in instruction.groups:
+                if g.parameters.color not in ["white", "warm_white", "cool_white"]:
+                    # Wash out the saturation
+                    g.parameters.intensity = g.parameters.intensity * 0.8
+                g.transition.type = TransitionType.FADE
+                g.transition.duration_seconds = max(g.transition.duration_seconds, 3.0)
+                
+        # 4. Temporal Stability (handled implicitly by forcing transitions to slower speeds if constraints fail)
+        temporal_stability = float(v3_metrics.get("temporal_stability_delta", 1.0))
+        if temporal_stability < 0.3:
+            for g in instruction.groups:
+                g.transition.duration_seconds = max(g.transition.duration_seconds, 5.0)
+
+        # Inject into metadata
+        if instruction.metadata is None:
+            instruction.metadata = {}
+        instruction.metadata["v3_overrides_applied"] = {
+            "irony_dampened": irony > 0.6,
+            "seriousness_capped": seriousness < 0.3,
+            "confidence_safe_mode": confidence < 0.4
+        }
+        return instruction
+
     def _generate_event_instruction(self, scene_id: str, scene_text: str, timing: Dict) -> LightingInstruction:
         """
-        Bypass RAG/Emotion mapping and generate presets based purely on event context.
+        Generate lighting for event schedules.
+        Tier 1: OpenAI classifies event type and generates preset.
+        Tier 2: Keyword matching (original logic).
+        Tier 3: KEYNOTE_SPEAKER preset.
         """
         text_lower = scene_text.lower()
-        
-        # Simple local logic to map to event presets
-        if "walk in" in text_lower or "reception" in text_lower or "break" in text_lower:
-            preset = "WALK_IN_AMBIENCE"
-            base_color = "warm_white"
-            base_intensity = 80
-            ambient_intensity = 60
-        elif "panel" in text_lower or "discussion" in text_lower:
-            preset = "PANEL_DISCUSSION"
-            base_color = "daylight_white"
-            base_intensity = 90
-            ambient_intensity = 40
-        elif "q&a" in text_lower or "audience" in text_lower:
-            preset = "AUDIENCE_QNA"
-            base_color = "warm_white"
-            base_intensity = 70
-            ambient_intensity = 80
-        elif "award" in text_lower or "gala" in text_lower:
-            preset = "AWARD_CEREMONY"
-            base_color = "gold"
-            base_intensity = 100
-            ambient_intensity = 30
-        else:
-            preset = "KEYNOTE_SPEAKER"
-            base_color = "cool_white"
-            base_intensity = 95
-            ambient_intensity = 10
+
+        # Tier 1: Try OpenAI for event classification
+        preset = None
+        base_color = None
+        base_intensity = None
+        ambient_intensity = None
+
+        try:
+            result = openai_json(
+                prompt=(
+                    f"Classify this event text and suggest lighting.\n\n"
+                    f"TEXT: {scene_text[:1500]}\n\n"
+                    f"Classify into one of: WALK_IN_AMBIENCE, PANEL_DISCUSSION, "
+                    f"AUDIENCE_QNA, AWARD_CEREMONY, KEYNOTE_SPEAKER\n\n"
+                    f'Return JSON: {{"preset": "...", "base_color": "color_name", '
+                    f'"base_intensity": 0-100, "ambient_intensity": 0-100}}'
+                ),
+                system_prompt="You are a professional event lighting designer. Output ONLY valid JSON.",
+                expected_keys=["preset", "base_color"],
+            )
+            if result:
+                preset = result.get("preset", "KEYNOTE_SPEAKER")
+                base_color = result.get("base_color", "cool_white")
+                base_intensity = int(result.get("base_intensity", 95))
+                ambient_intensity = int(result.get("ambient_intensity", 10))
+                logger.info(f"Phase 4: OpenAI classified event as: {preset}")
+        except Exception as e:
+            logger.warning(f"Phase 4: OpenAI event classification failed: {e}")
+
+        # Tier 2: Keyword matching fallback (original logic)
+        if not preset:
+            if "walk in" in text_lower or "reception" in text_lower or "break" in text_lower:
+                preset = "WALK_IN_AMBIENCE"
+                base_color = "warm_white"
+                base_intensity = 80
+                ambient_intensity = 60
+            elif "panel" in text_lower or "discussion" in text_lower:
+                preset = "PANEL_DISCUSSION"
+                base_color = "daylight_white"
+                base_intensity = 90
+                ambient_intensity = 40
+            elif "q&a" in text_lower or "audience" in text_lower:
+                preset = "AUDIENCE_QNA"
+                base_color = "warm_white"
+                base_intensity = 70
+                ambient_intensity = 80
+            elif "award" in text_lower or "gala" in text_lower:
+                preset = "AWARD_CEREMONY"
+                base_color = "gold"
+                base_intensity = 100
+                ambient_intensity = 30
+            else:
+                # Tier 3: Safe default
+                preset = "KEYNOTE_SPEAKER"
+                base_color = "cool_white"
+                base_intensity = 95
+                ambient_intensity = 10
             
         transition = Transition(type=TransitionType.FADE, duration_seconds=3.0)
         
@@ -504,10 +639,76 @@ class LightingDecisionEngine:
         scene_text: str, 
         timing: Dict
     ) -> LightingInstruction:
-        """Generate using rule-based system"""
+        """
+        Generate lighting instruction.
+        Tier 1: OpenAI designs intelligent 5-group lighting.
+        Tier 2: Rule-based palette mapping (original logic).
+        Tier 3: Uniform 50% white wash.
+        """
+        # Tier 1: Try OpenAI for intelligent lighting design
+        try:
+            result = openai_json(
+                prompt=(
+                    f"Design theatrical lighting for this scene.\n\n"
+                    f"SCENE TEXT: {scene_text[:1500]}\n"
+                    f"EMOTION: {emotion}\n\n"
+                    f"Design lighting for these 5 groups: front_wash, back_light, side_fill, specials, ambient.\n"
+                    f"For each group, specify intensity (0-100), color (name), and focus_area.\n\n"
+                    f'Return JSON: {{"groups": [{{"group_id": "front_wash", "intensity": 80, '
+                    f'"color": "warm_amber", "focus_area": "full_stage", '
+                    f'"transition_type": "fade", "transition_duration": 2.0}}, ...]}}'
+                ),
+                system_prompt=(
+                    "You are a professional theatrical lighting designer. "
+                    "Design lighting intent for stage groups. Output ONLY valid JSON."
+                ),
+                expected_keys=["groups"],
+            )
+            if result and isinstance(result.get("groups"), list) and len(result["groups"]) >= 1:
+                groups = []
+                for g in result["groups"]:
+                    try:
+                        gid = g.get("group_id", "ambient")
+                        if gid not in LIGHTING_GROUPS:
+                            continue
+                        # Determine transition type
+                        try:
+                            trans_type = TransitionType(g.get("transition_type", "fade"))
+                        except ValueError:
+                            trans_type = TransitionType.FADE
+                        groups.append(GroupLightingInstruction(
+                            group_id=gid,
+                            parameters=LightingParameters(
+                                intensity=min(float(g.get("intensity", 50)), 100),
+                                color=g.get("color", "white"),
+                                focus_area=FocusArea(g.get("focus_area", "full_stage")) if g.get("focus_area") in [e.value for e in FocusArea] else None,
+                                color_temperature=g.get("color_temperature"),
+                            ),
+                            transition=Transition(
+                                type=trans_type,
+                                duration_seconds=float(g.get("transition_duration", 2.0)),
+                            ),
+                        ))
+                    except Exception:
+                        continue
+
+                if groups:
+                    logger.info(f"Phase 4: OpenAI designed {len(groups)} groups for '{emotion}'")
+                    return LightingInstruction(
+                        scene_id=scene_id,
+                        emotion=emotion,
+                        time_window=TimeWindow(
+                            start_time=timing.get("start_time", 0),
+                            end_time=timing.get("end_time", 0)
+                        ),
+                        groups=groups,
+                        metadata={"generation_method": "openai"}
+                    )
+        except Exception as e:
+            logger.warning(f"Phase 4: OpenAI lighting design failed: {e}")
+
+        # Tier 2: Rule-based generation (original logic)
         palette = self.retriever.retrieve_palette(emotion)
-        
-        # Build group instructions from palette
         groups = self._build_group_instructions(palette, emotion)
         
         return LightingInstruction(
