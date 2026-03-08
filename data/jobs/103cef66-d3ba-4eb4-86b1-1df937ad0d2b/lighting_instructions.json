@@ -1,0 +1,971 @@
+{
+  "metadata": {
+    "source_file": "Script-1.txt",
+    "doc_type": "script",
+    "genre": "thriller",
+    "total_scenes": 7,
+    "dominant_emotion": "tension",
+    "emotion_distribution": {
+      "tension": 3,
+      "panic": 1,
+      "fear": 1,
+      "terror": 1,
+      "foreboding": 1
+    }
+  },
+  "script_data": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "INT. OLD VICTORIAN HOUSE - LIVING ROOM - NIGHT\n\n[Approx. Timestamp: 00:00:00]\nRain lashes the windows. EMMA (32, tired single mom) sits on a worn couch, scrolling her phone. Her daughter LILY (8) sleeps upstairs. The house creaks\u2014old pipes, settling wood.\n\nEMMA\n(soft, to herself)\nJust one more bill paid... then bed.\n\nA faint WHISPER from the wall behind her. Indistinct. She freezes.\n\nEMMA\nHello?\n\nSilence. She shakes it off, stands, walks to the kitchen.",
+      "start": 0.0,
+      "end": 90.0,
+      "duration": 90.0,
+      "emotion": "tension",
+      "emotion_confidence": 0.7,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.5
+        },
+        {
+          "emotion": "fear",
+          "score": 0.3
+        },
+        {
+          "emotion": "vulnerability",
+          "score": 0.2
+        }
+      ],
+      "sentiment_score": 0.7,
+      "theatrical_context": {
+        "predicted_theme": "uneasy and suspenseful",
+        "confidence": 0.7
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.7,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.1,
+        "scene_energy": 0.6266666666666667
+      },
+      "word_count": 75,
+      "dialogue_lines": [
+        {
+          "character": "EMMA",
+          "line": "Just one more bill paid... then bed."
+        },
+        {
+          "character": "EMMA",
+          "line": "Hello?"
+        }
+      ],
+      "narrative_role": "inciting_incident",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "INT. KITCHEN - CONTINUOUS\n\n[Approx. Timestamp: 00:01:30]\nEmma pours water. The whisper again\u2014closer, like breath on her neck.\n\nWHISPER (O.S.)\n...stay...\n\nEmma spins. Nothing. She laughs nervously.\n\nEMMA\nOld house. Just the wind.\n\nShe heads upstairs.",
+      "start": 90.0,
+      "end": 180.0,
+      "duration": 90.0,
+      "emotion": "tension",
+      "emotion_confidence": 0.7,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.6
+        },
+        {
+          "emotion": "fear",
+          "score": 0.4
+        }
+      ],
+      "sentiment_score": 0.7,
+      "theatrical_context": {
+        "predicted_theme": "uneasy and suspenseful",
+        "confidence": 0.7
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.7,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.3,
+        "scene_energy": 0.6277777777777778
+      },
+      "word_count": 36,
+      "dialogue_lines": [
+        {
+          "character": "WHISPER",
+          "line": "...stay..."
+        },
+        {
+          "character": "EMMA",
+          "line": "Old house. Just the wind."
+        }
+      ],
+      "narrative_role": "rising_action",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_003",
+      "scene_number": 3,
+      "text": "INT. UPSTAIRS HALLWAY - NIGHT\n\n[Approx. Timestamp: 00:03:00]\nEmma checks on Lily. The girl is peaceful, clutching a stuffed bear. Emma kisses her forehead.\n\nEMMA\n(whispering)\nSweet dreams, baby.\n\nAs she turns to leave, the bedroom door creaks shut behind her\u2014slowly, on its own. Emma stops.\n\nEMMA\nLily?\n\nNo answer. She pushes the door open. Lily is gone. Bed empty.\n\nEMMA\n(panicked)\nLily!\n\nShe rushes downstairs.",
+      "start": 180.0,
+      "end": 300.0,
+      "duration": 120.0,
+      "emotion": "panic",
+      "emotion_confidence": 0.9,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.7
+        },
+        {
+          "emotion": "fear",
+          "score": 0.8
+        },
+        {
+          "emotion": "desperation",
+          "score": 0.9
+        }
+      ],
+      "sentiment_score": 0.9,
+      "theatrical_context": {
+        "predicted_theme": "tense and anxious",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.9,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.0,
+        "scene_energy": 0.25303030303030305
+      },
+      "word_count": 66,
+      "dialogue_lines": [
+        {
+          "character": "EMMA",
+          "line": "Sweet dreams, baby."
+        },
+        {
+          "character": "EMMA",
+          "line": "Lily?"
+        },
+        {
+          "character": "EMMA",
+          "line": "Lily!"
+        }
+      ],
+      "narrative_role": "rising_action",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_004",
+      "scene_number": 4,
+      "text": "INT. LIVING ROOM - NIGHT\n\n[Approx. Timestamp: 00:05:00]\nEmma searches frantically. Calls out.\n\nEMMA\nLily! This isn't funny!\n\nThe whispers grow\u2014multiple voices now, overlapping, childlike but wrong.\n\nWHISPERS (O.S.)\n...she's ours now... she likes it here...\n\nEmma grabs her phone\u2014 no signal. She runs to the front door. Locked. She twists the knob violently.\n\nEMMA\nOpen! Come on!\n\nThe lights flicker. Shadows stretch unnaturally long across the walls.",
+      "start": 300.0,
+      "end": 450.0,
+      "duration": 150.0,
+      "emotion": "fear",
+      "emotion_confidence": 0.9,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.8
+        },
+        {
+          "emotion": "desperation",
+          "score": 0.95
+        },
+        {
+          "emotion": "tension",
+          "score": 0.85
+        }
+      ],
+      "sentiment_score": 0.9,
+      "theatrical_context": {
+        "predicted_theme": "tense and anxious",
+        "confidence": 0.9
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.9,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.0,
+        "scene_energy": 0.8588235294117649
+      },
+      "word_count": 68,
+      "dialogue_lines": [
+        {
+          "character": "EMMA",
+          "line": "Lily! This isn't funny!"
+        },
+        {
+          "character": "WHISPERS",
+          "line": "...she's ours now... she likes it here..."
+        },
+        {
+          "character": "EMMA",
+          "line": "Open! Come on!"
+        }
+      ],
+      "narrative_role": "climax",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_005",
+      "scene_number": 5,
+      "text": "INT. BASEMENT STAIRS - NIGHT\n\n[Approx. Timestamp: 00:07:30]\nEmma, flashlight in hand, descends slowly. The whispers lead her down.\n\nWHISPERS\n...down here... she's waiting...\n\nAt the bottom: the basement is empty except for an old mirror covered in dust. Emma approaches.\n\nShe wipes the glass. Her reflection stares back\u2014but it's not moving with her. The reflection smiles.\n\nREFLECTION EMMA\n(soft, eerie)\nYou've been gone so long, Emma. We missed you.\n\nEmma backs away. The mirror cracks\u2014slow spiderweb fractures.\n\nSuddenly, LILY'S VOICE from behind the mirror.\n\nLILY (O.S.)\nMommy... help...\n\nEmma smashes the mirror with her elbow. Glass shatters. Darkness swallows the room.\n\nThe whispers become screams\u2014inhuman.\n\nEMMA\n(screaming)\nGive her back!",
+      "start": 450.0,
+      "end": 450.0,
+      "duration": 0.0,
+      "emotion": "terror",
+      "emotion_confidence": 0.95,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.9
+        },
+        {
+          "emotion": "fear",
+          "score": 0.95
+        },
+        {
+          "emotion": "desperation",
+          "score": 1.0
+        }
+      ],
+      "sentiment_score": 0.95,
+      "theatrical_context": {
+        "predicted_theme": "tense and anxious",
+        "confidence": 0.95
+      },
+      "v3_metrics": {
+        "irony_index": 0.5,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.95,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.0,
+        "scene_energy": 1.0
+      },
+      "word_count": 111,
+      "dialogue_lines": [
+        {
+          "character": "WHISPERS",
+          "line": "...down here... she's waiting..."
+        },
+        {
+          "character": "REFLECTION EMMA",
+          "line": "You've been gone so long, Emma. We missed you."
+        },
+        {
+          "character": "LILY",
+          "line": "Mommy... help..."
+        },
+        {
+          "character": "EMMA",
+          "line": "Give her back!"
+        }
+      ],
+      "narrative_role": "falling_action",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_006",
+      "scene_number": 6,
+      "text": "Blackout. Only the sound of rain... and one last whisper.\n\nWHISPER (O.S.)\n...she's home now...",
+      "start": 450.0,
+      "end": 457.5,
+      "duration": 7.5,
+      "emotion": "foreboding",
+      "emotion_confidence": 0.95,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.8
+        },
+        {
+          "emotion": "fear",
+          "score": 0.9
+        },
+        {
+          "emotion": "desperation",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.95,
+      "theatrical_context": {
+        "predicted_theme": "tense and apprehensive",
+        "confidence": 0.95
+      },
+      "v3_metrics": {
+        "irony_index": 0.7,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.95,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.1,
+        "scene_energy": 0.6
+      },
+      "word_count": 15,
+      "dialogue_lines": [
+        {
+          "character": "WHISPER",
+          "line": "...she's home now..."
+        }
+      ],
+      "narrative_role": "falling_action",
+      "mood_shift": "none",
+      "doc_type": "script"
+    },
+    {
+      "scene_id": "scene_007",
+      "scene_number": 7,
+      "text": "FADE OUT.",
+      "start": 457.5,
+      "end": 462.5,
+      "duration": 5.0,
+      "emotion": "tension",
+      "emotion_confidence": 0.95,
+      "secondary_emotions": [
+        {
+          "emotion": "anxiety",
+          "score": 0.85
+        },
+        {
+          "emotion": "fear",
+          "score": 0.9
+        },
+        {
+          "emotion": "desperation",
+          "score": 0.7
+        }
+      ],
+      "sentiment_score": 0.95,
+      "theatrical_context": {
+        "predicted_theme": "anxious and apprehensive",
+        "confidence": 0.95
+      },
+      "v3_metrics": {
+        "irony_index": 0.0,
+        "narrative_seriousness_score": 0.85,
+        "emotion_confidence": 0.95,
+        "temporal_stability_delta": 0.0,
+        "comedy_intensity": 0.0,
+        "scene_energy": 0.0
+      },
+      "word_count": 2,
+      "dialogue_lines": [],
+      "narrative_role": "resolution",
+      "mood_shift": "none",
+      "doc_type": "script"
+    }
+  ],
+  "lighting_instructions": [
+    {
+      "scene_id": "scene_001",
+      "emotion": "tension",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 40.0,
+            "color": "steel_blue",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 35.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "amber",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 20.0,
+            "color": "steel_blue",
+            "focus_area": "center_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 10.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "tension_scene_001",
+      "emotion": "tension",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 35.0,
+            "color": "steel_blue",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 25.0,
+            "color": "amber",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 20.0,
+            "color": "steel_blue",
+            "focus_area": "center_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 15.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "scene_panic",
+      "emotion": "panic",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 40.0,
+            "color": "dark_blue",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "green",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 35.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 80.0,
+            "color": "cyan",
+            "focus_area": "center_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "flash",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "magenta",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "fear_scene_001",
+      "emotion": "fear",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 0.3,
+            "color": "dark_blue",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 0.2,
+            "color": "green",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 0.4,
+            "color": "dark_blue",
+            "focus_area": "center_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 0.1,
+            "color": "dark_blue",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "terror_scene_001",
+      "emotion": "terror",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 40.0,
+            "color": "dark_blue",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 80.0,
+            "color": "bright_white",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "cut",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "green",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 50.0,
+            "color": "cold_white",
+            "focus_area": "center_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 10.0,
+            "color": "cyan",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "foreboding_1",
+      "emotion": "foreboding",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 50.0,
+            "color": "green",
+            "focus_area": "full_stage",
+            "color_temperature": "cool"
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "magenta",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 40.0,
+            "color": "amber",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 60.0,
+            "color": "green",
+            "focus_area": "center_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "deep_red",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": true,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    },
+    {
+      "scene_id": "1",
+      "emotion": "tension",
+      "time_window": {
+        "start_time": 0.0,
+        "end_time": 0.0
+      },
+      "groups": [
+        {
+          "group_id": "front_wash",
+          "parameters": {
+            "intensity": 40.0,
+            "color": "steel_blue",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "back_light",
+          "parameters": {
+            "intensity": 30.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "side_fill",
+          "parameters": {
+            "intensity": 25.0,
+            "color": "amber",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "specials",
+          "parameters": {
+            "intensity": 20.0,
+            "color": "steel_blue",
+            "focus_area": "center_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        },
+        {
+          "group_id": "ambient",
+          "parameters": {
+            "intensity": 15.0,
+            "color": "cold_white",
+            "focus_area": "full_stage",
+            "color_temperature": null
+          },
+          "transition": {
+            "type": "fade",
+            "duration_seconds": 5.0
+          }
+        }
+      ],
+      "metadata": {
+        "generation_method": "llm",
+        "rlhf_applied": 5,
+        "v3_overrides_applied": {
+          "irony_dampened": false,
+          "seriousness_capped": false,
+          "confidence_safe_mode": false
+        }
+      }
+    }
+  ],
+  "scene_graph": {
+    "total_nodes": 11,
+    "total_edges": 14,
+    "scenes": 7,
+    "characters": 4,
+    "dialogues": 0
+  }
+}

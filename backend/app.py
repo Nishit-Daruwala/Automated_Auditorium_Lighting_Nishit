@@ -25,6 +25,8 @@ MODULE_1_DIR = SIMULATION_DIR / "module_1"
 
 # Create directories
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+SIMULATION_DIR.mkdir(parents=True, exist_ok=True)
+MODULE_1_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(title="Auditorium Lighting Automation API")
 
@@ -530,26 +532,17 @@ async def launch_simulation(job_id: str):
         raise HTTPException(status_code=404, detail="Results not found")
 
     # 1. Copy Data
-    # The simulation expects data to be served or loaded. 
-    # For now, let's copy it to module_1/data or similar if needed.
-    # Actually, the test_controller.py often reads a specific file. 
-    # Let's verify test_controller.py logic later. 
-    # For now, we assume we overwrite a standard 'current_show.json' 
-    # or pass the path to the controller.
-    
     target_path = SIMULATION_DIR / "current_show.json"
     shutil.copy(result_path, target_path)
     
     # 2. Start Simulation Web Server (if not running)
-    # We use a simple check or just try to start it.
     if "sim_web" not in simulation_processes:
-        # python -m http.server 8081 --directory external_simulation_prototype/module_1
-        cmd = ["python", "-m", "http.server", "8081", "--directory", str(MODULE_1_DIR)]
+        import sys
+        cmd = [sys.executable, "-m", "http.server", "8081", "--directory", str(MODULE_1_DIR)]
         proc = subprocess.Popen(cmd)
         simulation_processes["sim_web"] = proc
         print(f"🚀 Started Simulation Web Server (PID {proc.pid})")
         
-    # 3. Start Controller (if not running)
     # 3. Start Controller (Restart if running to load new show)
     if "sim_controller" in simulation_processes:
         print("🔄 Restarting Simulation Controller...")
@@ -560,9 +553,9 @@ async def launch_simulation(job_id: str):
              simulation_processes["sim_controller"].kill()
         del simulation_processes["sim_controller"]
 
-    # python test_controller.py
     ctrl_script = "test_controller.py"
-    cmd = ["python", ctrl_script] 
+    import sys
+    cmd = [sys.executable, ctrl_script] 
     
     proc = subprocess.Popen(cmd, cwd=SIMULATION_DIR)
     simulation_processes["sim_controller"] = proc
